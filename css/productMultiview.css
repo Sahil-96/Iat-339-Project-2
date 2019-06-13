@@ -13,7 +13,6 @@
   display: flex;
 }
 .product-heading{
-  font-size: 38px;
   margin-left: 6.737em;
   margin-top: 100px;
 }
@@ -32,7 +31,7 @@
   list-style: none;
   padding-right: 0;
   margin-right: 0;
-  width:
+  /* width: */
 }
 .single-product{
   flex-grow: 1;
