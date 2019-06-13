@@ -4,3 +4,43 @@
 ul{
   padding: 0;
   list-style: none;
+}
+
+.faq{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 16em;
+  margin-right: 16em;
+}
+
+.title{
+  text-align: center;
+  font-weight: 900;
+}
+
+.question{
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-and-button{
+  padding: 1.5em;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dropdown{
+  width: 2em;
+  height: 2em;
+  background-color: #3afcff;
+}
+
+.g{
+  background-color: #808080;
+}
+.question p{
+  padding-left: 1.5em;
+}
