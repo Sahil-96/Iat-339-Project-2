@@ -13,14 +13,12 @@
   display: flex;
 }
 .product-heading{
-  margin-left: 6.737em;
+  margin-left: 16em;
   margin-top: 100px;
 }
 
 .product-page{
   display: flex;
-  margin-left: 16em;
-  margin-right: 16em;
 }
 .main-product{
   display: flex;
@@ -43,6 +41,11 @@
   border-radius: 9px;
 
 }
+
+.single-product:hover, .single-product:focus{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 ul{
   list-style: none;
   margin: 0;

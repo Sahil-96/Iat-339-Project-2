@@ -15,8 +15,6 @@ ul{
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-  margin-left: 16em;
-  margin-right: 16em;
 }
 .checkout{
   display: flex;

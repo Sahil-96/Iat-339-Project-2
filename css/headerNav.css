@@ -156,6 +156,7 @@ form{
 	z-index: 1;
 	-webkit-backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
 }
 
 .left{

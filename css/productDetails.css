@@ -8,9 +8,8 @@ ul{
   list-style: none;
 }
 
+
 .product-details{
-  margin-left: 16em;
-  margin-right: 16em;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -149,6 +148,9 @@ ul{
   margin-bottom: 1.403em;
   border-radius: 9px;
 
+}
+.single-product:hover, .single-product:focus{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .reviews{
