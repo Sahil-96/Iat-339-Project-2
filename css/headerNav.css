@@ -102,11 +102,11 @@ form{
   display: flex;
   position: fixed;
   top: 0;
+  z-index: 1;
   width: 95%;
   align-items: center;
   margin-left: 3em;
   padding-bottom: 20px;
-  z-index: 1;
 }
 
 .menu-nav {
