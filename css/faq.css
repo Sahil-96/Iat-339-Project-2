@@ -1,10 +1,6 @@
 *, *::after, *::before{
   box-sizing: border-box;
 }
-ul{
-  padding: 0;
-  list-style: none;
-}
 
 .faq{
   margin-top: 100px;
@@ -24,23 +20,18 @@ ul{
   flex-direction: column;
 }
 
-.heading-and-button{
-  padding: 1.5em;
-  padding-bottom: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.question-title{
+  padding: 0;
+  margin-top: 1em;
+  padding-left: 1.5em;
 }
 
-.dropdown{
-  width: 2em;
-  height: 2em;
-  background-color: #3afcff;
-}
 
 .g{
-  background-color: #808080;
+  background-color: #adadad;
 }
+
 .question p{
   padding-left: 1.5em;
+  padding-bottom: 1em;
 }
