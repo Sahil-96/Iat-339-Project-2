@@ -1,0 +1,217 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+/*Nav bar*/
+
+label{
+font-weight: bold;
+padding-right: .5em;
+}
+
+textarea[name=input]{
+  color: #52525a;
+  vertical-align: top;
+  text-align: left;
+  padding: 0.75em;
+  width: 20em;
+  /*height: 10em;*/
+  border-style: solid;
+  border-radius: .5em;
+  border-width: .125em;
+  border-color: #52525a;
+  resize: vertical;
+  overflow: auto;
+  box-shadow: 0.2em .2em .25em rgba(0, 0, 0, 0.2);
+}
+
+.expand-entry {
+  color: #52525a;
+  padding: 0.75em;
+  width: 24em;
+  border-style: solid;
+  border-radius: .5em;
+  border-color: #52525a;
+  resize: vertical;
+  overflow: auto;
+  box-shadow: 0.2em .2em .25em rgba(0, 0, 0, 0.2);
+}
+
+input[id=search]{
+  color: #52525a;
+  width: 150px;
+  /*box-sizing: border-box;*/
+  /*border: 2px solid #ccc;*/
+  border-style: solid;
+  border-color: #f3784d;
+  border-radius: .5em;
+  background-color: white;
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
+  background-position: 0.75em 0.45em;
+  background-size: 1em 1em;
+  background-repeat: no-repeat;
+  /*box-shadow: 0 .2em .375em 0 rgba(0, 0, 0, 0.2), 0 .375em 1em 0 rgba(0, 0, 0, 0.1);*/
+  /*overflow-y: visible;*/
+  padding: .4em;
+  padding-left: 2.5em;
+  padding-right: .5em;
+  -webkit-transition: width 0.4s ease-in-out;
+  -webkit-fill-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  }
+
+  input[id=search]:focus {
+  width: -webkit-fill-available;
+  /*width: 100%;*/
+}
+
+.code-section{
+    background-color: #EEE;
+}
+
+.navigation{
+  margin-bottom: 5rem;
+}
+
+input[type=text] {
+  width: 250px;
+  box-sizing: border-box;
+  border: 2px solid #276cd414;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: "../img/searchIcon.png";
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+form{
+  width:100%;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+
+.container-nav {
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 95%;
+  align-items: center;
+  margin-left: 3em;
+  padding-bottom: 20px;
+}
+
+.menu-nav {
+  float: left;
+  display: flex;
+  color: black;
+  text-align: center;
+  padding-top: 0.8rem;
+  text-decoration: none;
+  font-size: 17px;
+}
+.logo-style{
+  text-align: center;
+}
+.logo-nav {
+  /* width: 10rem; */
+  float: left;
+  margin-top: 1rem;
+  /* margin-left: 0.5em; */
+  border: none;
+  font-size: 3em;
+}
+.searchbar-nav {
+  float: left;
+  width: 100%;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-left: 1em;
+  border: none;
+  font-size: 17px;
+}
+
+
+.button {
+	float: left;
+	min-width: 150px;
+	max-width: 250px;
+	display: block;
+	/* padding: 1em 1em; */
+  padding: 0.9em;
+	border: 1px solid #1b2ae026;
+	background: none;
+	color: inherit;
+	vertical-align: top;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.left{
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.right{
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.button:focus {
+	outline: none;
+}
+
+.button.button--aylen {
+	background: #fff;
+	color: #37474f;
+	overflow: hidden;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+.button--aylen.button--inverted {
+	background: none;
+	color: #fff;
+}
+.button--aylen::before,
+.button--aylen::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	bottom: 100%;
+	left: 0;
+	z-index: -1;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.button--aylen::before {
+	background: #3f51b5;
+}
+.button--aylen::after {
+	background: #3f51b5;
+}
+.button--aylen:hover {
+	color: #fff;
+}
+.button--aylen:hover::before,
+.button--aylen:hover::after {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+.button--aylen:hover::after {
+	-webkit-transition-delay: 0.175s;
+	transition-delay: 0.175s;
+}
+
+/*nav bar end*/
