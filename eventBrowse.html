@@ -2,13 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Events Browse</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Event Browse</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/eventBrowse.css">
+    <link rel="stylesheet" href="css/headerNav.css">
   </head>
+
   <body>
+    <nav class="container-nav">
+        <div class="logo-nav">
+          <img src="img/logo_new.jpeg" alt="logo" width="150rem">
+        </div>
 
-<h2>Event Browse Page</h2>
-<p>
-</p>
+        <div class="searchbar-nav">
+          <form>
+            <!-- Inputs -->
+            <input id="search" placeholder="Search for a product" type="text">
+          </form>
+        </div>
 
+      <div class="menu-nav">
+        <button class="button button--aylen button--round-l button--text-thick left">Browse</button>
+        <button class="button button--aylen button--round-l button--text-thick">Events</button>
+        <button class="button button--aylen button--round-l button--text-thick right">About</button>
+      </div>
+    </nav>
+
+	<div class="product-heading">
+      <h1>3D Printers</h1>
+    </div>
+
+    <div class="page-content-container">
+      <div class="filter">
+        <ul>
+          <li>Day of Week</li>
+          <li>Which State</li>
+          <li>Time of Day</li>
+          <li>Does it have prize</li>
+          <li>Competition</li>
+          <li>Educational</li>
+          <li>In-store vs Online</li>
+        </ul>
+      </div>
+
+      <div class="master-event-card-block-container">
+        <div class="event-card-container">
+          <h2>June 2019</h2>
+            <ul class="event-card-list">
+              <li>
+                <div class="event-card"></div>
+             </li>
+
+             <li>
+               <div class="event-card"></div>
+            	</li>
+            </ul>
+        </div> <!--end of event-card-container-->
+
+        <div class="event-card-container">
+          <h2>July 2019</h2>
+            <ul class="event-card-list">
+              <li>
+                <div class="event-card"></div>
+             </li>
+
+             <li>
+               <div class="event-card"></div>
+              </li>
+            </ul>
+        </div> <!--end of event-card-container-->
+      </div> <!--End of the master container of all things events-->
+	</div><!--end of page content container -->
   </body>
- </html>
+</html>

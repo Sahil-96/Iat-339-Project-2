@@ -107,6 +107,7 @@ form{
   align-items: center;
   margin-left: 3em;
   padding-bottom: 20px;
+  z-index: 1;
 }
 
 .menu-nav {
