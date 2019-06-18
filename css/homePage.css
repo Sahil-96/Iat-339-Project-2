@@ -1,0 +1,51 @@
+.banner-image-container{
+	display: flex;
+	flex-grow: 1;
+	margin-top: 6em; /*this is to offset due to Nav Bar*/
+	width: 100%;
+	height: 100vh;
+	background-color: #e1e1e1;
+	align-content: space-between;
+}
+
+.personal-ad-cards-container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	align-content: space-between;
+}
+
+
+.personal-ad-card{
+	background-color: white;
+	width: 31%;
+	height: 50%;
+}
+/*
+.personal-ad-card-inner-content{
+	width: 100%
+	margin: 1.563;
+}
+
+.filament-boxs-container{
+	flex-direction: column;
+	position: relative;
+	bottom: 0;
+}
+
+.two-filament-boxes{
+	flex-direction: row;
+}
+
+.individual-filament-box{
+	flex-direction: column;
+	width: 50%;
+}
+
+.filament-img{
+	width: 100%;
+	height: 40%;
+}*/
+
