@@ -10,7 +10,7 @@ ul{
 
 
 .product-details{
-  margin-top: 100px;
+  margin-top: 10em;
   display: flex;
   flex-direction: column;
 }

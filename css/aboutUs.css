@@ -1,6 +1,6 @@
 .banner-image{
 	flex-grow: 1;
-	margin-top: 6em; /*this is to offset due to Nav Bar*/
+	margin-top: 8em; /*this is to offset due to Nav Bar*/
 	width: 100%;
 	height: 50vh;
 	background-color: #e1e1e1;
@@ -9,7 +9,7 @@
 }
 .mini-links{
 	display: flex;
-	position: fixed;
+	position: absolute;
 	flex-direction: row;
 	margin: 1em 16em;
 	margin-bottom: 0;
