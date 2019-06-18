@@ -3,37 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Product Multiview</title>
+    <title>Product Page</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/productDetails.css">
     <link rel="stylesheet" href="css/headerNav.css">
   </head>
   <body>
-    <nav class="container-nav">
+    <  <nav class="container-nav">
 
-        <div class="logo-nav">
-          <img src="img/logo_new.jpeg" alt="logo" width="150rem">
-            <!-- <a class="logo-style main-nav-logo" href="#">Logo</a> -->
+          <div class="logo-nav">
+            <img src="img/logo_new.jpeg" alt="logo" width="150">
+              <!-- <a class="logo-style main-nav-logo" href="#">Logo</a> -->
+          </div>
+
+          <div class="searchbar-nav">
+            <form>
+              <!-- Inputs -->
+              <input id="search" placeholder="Search for a product" type="text">
+            </form>
+          </div>
+
+
+        <div class="menu-nav">
+          <a class="button button--aylen button--round-l button--text-thick left" href="productsMultiview.html">Product</a>
+          <a class="button button--aylen button--round-l button--text-thick" href="eventBrowse.html">Event</a>
+          <a class="button button--aylen button--round-l button--text-thick " href="aboutUs.html">Service</a>
+          <a class="button button--aylen button--round-l button--text-thick right" href="checkout.html">Cart-Logo</a>
         </div>
 
-        <div class="searchbar-nav">
-          <form>
-            <!-- Inputs -->
-            <input id="search" placeholder="Search for a product" type="text">
-          </form>
-        </div>
+      </nav>
 
-
-      <div class="menu-nav">
-        <button class="button button--aylen button--round-l button--text-thick left">Browse</button>
-        <button class="button button--aylen button--round-l button--text-thick">Events</button>
-        <button class="button button--aylen button--round-l button--text-thick right">About</button>
-      </div>
-
-    </nav>
-
-    <div class="product-details">
+    <div class="product-details page-content-container">
       <div class="images-and-details">
         <div class="images-set">
           <!-- This is where all the images go.... -->
@@ -130,10 +131,12 @@
           <h2>Similar Products</h2>
           <ul class="product-list">
             <li>
-              <div class="single-product">
+              <a href="productDetails.html">
+                <div class="single-product">
 
-              </div>
-           </li>
+                </div>
+              </a>
+            </li>
            <li>
              <div class="single-product">
 
