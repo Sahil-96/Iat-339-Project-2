@@ -4,7 +4,7 @@
 /*Nav bar*/
 
 .container-nav {
-  background-color: #764dbe;
+  background-color: #fff;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -12,14 +12,15 @@
   top: 0;
   z-index: 1;
   width: 100%;
-  padding: 2em 0;
+  padding: 1em 0;
+  box-shadow: 0px 13px 57px -15px rgba(0,0,0,0.49);
 }
 
 .logo-nav {
   background-color:#ff5722;
   min-width: 10em;
   margin: 0.2em;
-  margin-left: 2em;
+  margin-left: 1.5em;
   padding: 1em 0;
   text-align: center;
   font-weight: 900;
@@ -46,7 +47,6 @@
   justify-content: center;
 }
 
-
 input[id=search]{
   color: #52525a;
   width: 150px;
@@ -63,7 +63,7 @@ input[id=search]{
   transition: width 0.4s ease-in-out;
   }
 
-  input[id=search]:focus {
+input[id=search]:focus {
   width: -webkit-fill-available;
 }
 
@@ -86,6 +86,7 @@ input[type=text] {
 input[type=text]:focus {
   width: 100%;
 }
+
 form{
   width:100%;
   height: 100%;
@@ -95,13 +96,16 @@ form{
   min-width: 10em;
   margin: 0.2em;
 }
+
 .cart{
+  margin-right: 1em;
   padding: 0;
   width: 50px;
   height: 50px;
 }
 
 .user{
+  margin-left: 1em;
   padding-bottom: 0;
   width: 50px;
   height: 50px;
@@ -109,99 +113,91 @@ form{
 }
 
 .cart img{
+ margin-left: 1em;
  width: 50px;
  height: 50px;
  padding: 0;
-
 }
+
 .user img{
+  margin-left: 1em;
   width: 50px;
   height: 50px;
-
 }
-.button {
-  min-width: 10em;
-  /* background-color: #4CAF50; */
-  border: 1px solid #c6c3c3;
-  text-align: center;
-  padding: 1em 1em;
-  margin: 0.2em 0;
+
+/*Core styling for all buttons*/
+.button{
+    display: inline-block;
+    color: #fff; /*white*/
+    background-color: #f3784d; /*orange*/
+    transition-duration: 0.4s;
+}
+
+/* Styling for the navigation button */
+
+.button-nav {
+  padding: 1em 3em;
+  border-bottom: 0.2em;
+  border-color: #f3784d;
+  background-color: white;
+  font-weight: bold;
+  color: #52525a;
+  border-bottom-style: solid;
   text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
   position: relative;
-	z-index: 1;
-	-webkit-backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-  text-decoration: none;
-
-	/* border: 1px solid #c6c3c3;
-  text-align: center;
-  padding: 0.9em 0;
-	background: none;
-	position: relative;
-	z-index: 1;
-	-webkit-backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-  text-decoration: none; */
+  cursor:pointer;
+  z-index:0;
 }
 
-.left{
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+.button-nav:before {
+  background-color: #f3784d; /*orange*/
+  content: "";
+  position: absolute;
+  z-index:-1;
+  top: 0;  left: 0;  right: 0;  bottom: 0;
+  transform: scaleY(0);
+  transform-origin: 0 100%;
+  transition: transform .3s ease-out;
 }
 
-.right{
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  margin-right: 3em;
-}
-.button:focus {
-	outline: none;
+.button-nav:hover:before{
+  transform: scaleY(1);
 }
 
-.button.button--aylen {
-	background: #fff;
-	color: #37474f;
-	overflow: hidden;
-	-webkit-transition: color 0.3s;
-	transition: color 0.3s;
-}
-.button--aylen.button--inverted {
-	background: none;
-	color: #fff;
-}
-.button--aylen::before,
-.button--aylen::after {
-	content: '';
-	position: absolute;
-	height: 20%;
-	width: 100%;
-  bottom: 0;
-	left: 0;
-	z-index: -1;
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
-	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-}
-/* .button--aylen::before {
-	background: #3f51b5;
-} */
-.button--aylen::after {
-	background: #3f51b5;
-}
-.button--aylen:hover {
-	color: #37474f;
-}
-.button--aylen:hover::before,
-.button--aylen:hover::after {
-	-webkit-transform: translate3d(0, -1000px, 0);
-	transform: translate3d(0, -1000px, 0);
-}
-.button--aylen:hover::after {
-	-webkit-transition-delay: 0.175s;
-	transition-delay: 0.175s;
+.button-nav:hover{
+  color: white;
+  transition-duration: 0.3s;
 }
 
-/*nav bar end*/
+.button-nav:active{
+  animation: pulse-orange 0.2s 1 ease-out;
+  color: #52525a;
+}
+
+/* end of Nav buttons*/
+
+/*animation for submit button*/
+/*based from code at: https://codepen.io/stopsatgreen/pen/hegrm */
+
+@keyframes pulse-orange {
+  from {
+    box-shadow:  0 0 0 0 rgba(255, 255, 255, 1), /*white*/
+                 0 0 0 0 rgba(243,120,77, 1); /*orange border*/
+  }
+  to {
+    box-shadow:  0 0 0 0.65em rgba(255, 255, 255, 0.5),
+                 0 0 0 1em rgba(243,120,77, 0);
+  }
+}
+
+@keyframes pulse-grey {
+  from {
+    box-shadow:  0 0 0 0 rgba(255, 255, 255, 1), /*white*/
+                 0 0 0 0 rgba(82,82,90, 1); /*grey border*/
+  }
+  to {
+    box-shadow:  0 0 0 0.65em rgba(255, 255, 255, .8),
+                 0 0 0 1em rgba(82,82,90, .25);
+  }
+}
+/*end of animation*/
