@@ -4,6 +4,9 @@
 /*Nav bar*/
 
 .container-nav {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
   overflow: hidden;
   display: flex;
