@@ -40,7 +40,9 @@
 	margin: 0;
 }
 
-
+.banner-text-price-container h4{
+	margin:0;
+}
 
 .banner-text-description-container{
 	display: flex;
@@ -58,10 +60,72 @@
 	background-color: yellow;
 }
 
+.tickets-bar-container{
+	display: flex;
+	flex-direction: row;
+}
 
+.ticket-bar-left-column{
+	width: 66%;
+	background-color: red;
+}
 
+.ticket-bar-right-column{
+	width: 34%;
+	/*margin: 1em,1.5em;*/
+}
 
+.button-register{
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #f3784d;
+  border-color: #f3784d;
+  border-width: 2px;
+  border-style: solid;
+  width: 100%;
+  margin: 1em, 1.5em;
+  text-align: center;
+  color: white;
+}
 
+.button-register h4{
+	margin:0;
+}
+
+.button-register:hover, .button-register:focus{
+  background-color: #fff;
+  color: #f3784d;
+  border-color: #f3784d;
+  /* border-width: 0.2em; */
+  border-style: solid;
+}
+
+.core-content-container{
+	display: flex;
+	flex-direction: row;
+	background-color: green;
+}
+
+.left-content-conatiner{
+	width: 66%;
+	padding-left: 8em;
+	padding-right: 8em;
+}
+
+.right-content-container{
+	width: 34%;
+	padding: 2em;
+	background-color: blue;
+}
+
+.right-content-container p{
+	margin:0;
+}
+
+.right-content-container h4{
+	margin-bottom: 0.5em;
+}
 
 
 

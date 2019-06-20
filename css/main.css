@@ -39,6 +39,15 @@ p{
 .page-content-container{
   display: flex;
   /*display: block;*/
-  margin-left: 16em;
-  margin-right: 16em;
+  /*margin-left: 16em;*/
+  /*margin-right: 16em;*/
+  /*justify-content: space-around;
+  max-width: 88em;
+  padding: 0 auto;*/
+
+
+  padding: 0 3em;
+  max-width: 88em;
+  margin: 0 auto;
+
 }

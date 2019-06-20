@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Product Multiview</title>
+    <title>Product Page</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/productDetails.css">
+    <link rel="stylesheet" href="css/productMultiview.css">
     <link rel="stylesheet" href="css/headerNav.css">
+    <link rel="stylesheet" href="css/footer.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
     <nav class="container-nav">
 
-        <div class="logo-nav">
-          <img src="img/logo_new.jpeg" alt="logo" width="150rem">
-            <!-- <a class="logo-style main-nav-logo" href="#">Logo</a> -->
-        </div>
+        <a class="logo-nav" href="index.html">Logo</a>
 
         <div class="searchbar-nav">
           <form>
@@ -26,14 +27,16 @@
 
 
       <div class="menu-nav">
-        <button class="button button--aylen button--round-l button--text-thick left">Browse</button>
-        <button class="button button--aylen button--round-l button--text-thick">Events</button>
-        <button class="button button--aylen button--round-l button--text-thick right">About</button>
+        <a class="button button-nav" href="productsMultiview.html">Product</a>
+        <a class="button button-nav" href="eventBrowse.html">Event</a>
+        <a class="button button-nav" href="aboutUs.html">Service</a>
+        <a class="user" href="checkout.html"><img src="img/user-black.png" alt="user icon"></a>
+        <a class="cart" href="checkout.html"><img src="img/cart-black.png" alt="cart icon"></a>
       </div>
 
     </nav>
 
-    <div class="product-details">
+    <div class="product-details page-content-container">
       <div class="images-and-details">
         <div class="images-set">
           <!-- This is where all the images go.... -->
@@ -59,34 +62,41 @@
             <div class="image1">
 
             </div>
+            <div class="image1 last">
+
+            </div>
           </div>
         </div>
 
         <div class="product-detail-heading">
           <div class="product-name-heading">
-            <h1>Name of the product (more specifications and details)</h1>
+            <h1>THE MAKERBOT REPLICATOR+</h1>
           </div>
           <div class="product-price">
-              <h2 class="strikethrough-price">$400</h2>
-              <h2 class="price">$399</h2>
+              <h2 class="strikethrough-price">$3699</h2>
+              <h2 class="prices">$2799</h2>
           </div>
 
           <div class="stars">
-            <h2>1 2 3 4 5</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
           </div>
 
           <div class="overview-more">
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime</p>
+            <p>MakerBot's award-winning desktop 3D printer is engineered for fast and reliable 3D printing. To ensure easy, accessible 3D printing, the MakerBot Replicator+ comes with the Smart Extruder+ and all the standard features of its predecessor. A few of those features include an LCD display, an on-board camera, as well as USB, Ethernet, and Wi-Fi connection. The MakerBot Replicator+ prints 30% faster than its predecessor and offers a 25% larger build volume. For greater reliability and precision, it features improved hardware, like a redesigned gantry and z-stage.</p>
           </div>
 
           <div class="product-buttons">
 
-            <div class="add-to-cart-button">
-              <button class="button-pro button--aylen button--round-l button--text-thick left">ADD TO CART</button>
+            <div class="add-to-carts button-submits left">
+              <h3>Add to cart</h3>
             </div>
 
-            <div class="add-to-wishlist-button">
-              <button class="button-pro button--aylen button--round-l button--text-thick right">ADD TO WISHLIST</button>
+            <div class="add-to-carts button-submits right">
+              <h3>Add to wishlist</h3>
             </div>
           </div>
 
@@ -130,40 +140,153 @@
           <h2>Similar Products</h2>
           <ul class="product-list">
             <li>
-              <div class="single-product">
 
-              </div>
-           </li>
-           <li>
-             <div class="single-product">
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/bookmark_no_fill.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
 
-             </div>
-          </li>
-          <li>
-            <div class="single-product">
+                  <a href="productDetails.html">
+                  <div class="image">
+                    <img src="img/product.png" alt="product-image">
+                  </div>
+                  <div class="details">
+                    <h3 class="name-product">ROBO R2</h3>
+                    <div class="price-and-star">
+                      <h4 class="price">$1499</h4>
+                      <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    </div>
+                    <div class="size-and-assembly">
+                      <h4>16.7 x 23.7 x 16.6</h4>
+                    </div>
+                    <!-- <div class="add-to-cart button-submit">
+                      <h3>Add to Cart</h3>
+                    </div> -->
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
 
-            </div>
-          </li>
-          <li>
-           <div class="single-product">
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/bookmark_no_fill.png" alt="bookmark">
+                      </div>
+                    </a>
 
-           </div>
-          </li>
-          <li>
-            <div class="single-product">
+                  </div>
+                  <a href="productDetails.html">
+                  <div class="image">
+                    <img src="img/product1.png" alt="product-image">
+                  </div>
+                  <div class="details">
+                    <h3 class="name-product">THE MAKERBOT REPLICATOR MINI+</h3>
+                    <div class="price-and-star">
+                      <h4 class="price">$1299</h4>
+                      <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    </div>
+                    <div class="size-and-assembly">
+                      <h4>11.6 X 13.8 X 15.0</h4>
+                    </div>
+                    <!-- <div class="add-to-cart button-submit">
+                      <h3>Add to Cart</h3>
+                    </div> -->
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
 
-            </div>
-          </li>
-          <li>
-             <div class="single-product">
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/bookmark_no_fill.png" alt="bookmark">
+                      </div>
+                    </a>
 
-             </div>
-          </li>
-          <li>
-            <div class="single-product">
+                  </div>
+                  <a href="productDetails.html">
+                  <div class="image">
+                    <img src="img/product2.png" alt="product-image">
+                  </div>
+                  <div class="details">
+                    <h3 class="name-product">Formlabs Form II</h3>
+                    <div class="price-and-star">
+                      <h4 class="price">$3150</h4>
+                      <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    </div>
+                    <div class="size-and-assembly">
+                      <h4>5.7 × 5.7 × 6.9</h4>
+                    </div>
+                    <!-- <div class="add-to-cart button-submit">
+                      <h3>Add to Cart</h3>
+                    </div> -->
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
 
-            </div>
-          </li>
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/bookmark_no_fill.png" alt="bookmark">
+                      </div>
+                    </a>
+
+                  </div>
+                  <a href="productDetails.html">
+                  <div class="image">
+                    <img src="img/product3.png" alt="product-image">
+                  </div>
+                  <div class="details">
+                    <h3 class="name-product">3D Printer Generic</h3>
+                    <div class="price-and-star">
+                      <h4 class="price">$1099</h4>
+                      <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                    </div>
+                    <div class="size-and-assembly">
+                      <h4>7.6 x 5.6 x 9.8</h4>
+                    </div>
+                    <!-- <div class="add-to-cart button-submit">
+                      <h3>Add to Cart</h3>
+                    </div> -->
+                  </div>
+                </div>
+              </a>
+            </li>
         </ul>
       </div>
 
@@ -233,6 +356,58 @@
           </div>
 
         </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+
+      <div class="layer1">
+        <div class="services">
+          <h2>SERVICES</h2>
+          <ul>
+            <li>Local Printing</li>
+            <li>Consulting</li>
+            <li>Marketing</li>
+          </ul>
+
+        </div>
+        <div class="company">
+          <h2>COMPANY</h2>
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Our Blog</li>
+          </ul>
+
+        </div>
+        <div class="support">
+          <h2>SUPPORT</h2>
+          <ul>
+            <li>Support Page</li>
+            <li>FAQ</li>
+            <li>Terms of Use</li>
+          </ul>
+        </div>
+        <div class="footer-logo">
+          LOGO
+        </div>
+      </div>
+
+      <div class="layer2">
+        <div class="facebook social">
+
+        </div>
+        <div class="youtube social">
+
+        </div>
+        <div class="twitter social">
+
+        </div>
+      </div>
+
+      <div class="layer3">
+        <h4>Copyright 2019 | Simon Fraser University, Surrey | 123-456-7890 | support@company.com</h4>
       </div>
 
     </div>
