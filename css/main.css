@@ -1,8 +1,44 @@
+ *, *::after, *::before{
+   box-sizing: border-box;
+ }
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  /*padding: 0.5rem;*/
+}
+
+h1,h2,h3,h4,h4,h5,h6{
+font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-size: 38px;
+}
+
+h2{
+  font-size: 27px;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 22px;
+  font-weight: 500;
+
+}
+
+h4{
+  font-size: 18px;
+  font-weight: bold;
+}
+
 p{
-	color: red; 
+  font-size: 16px;
 }
 
-.begin{
-	color: blue;
+.page-content-container{
+  display: flex;
+  /*display: block;*/
+  margin-left: 16em;
+  margin-right: 16em;
 }
-

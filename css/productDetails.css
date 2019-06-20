@@ -1,0 +1,265 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+
+.product-details{
+  margin-top: 6em;
+  padding: 3em;
+  margin-bottom: 30em;
+  display: flex;
+  flex-direction: column;
+}
+.images-and-details{
+  display: flex;
+  flex-direction: row;
+}
+
+.images-set{
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  justify-content: space-between;
+}
+.main-image{
+  width: 100%;
+  height: 500px;
+  background-color: #777777;
+}
+
+.image-caro{
+  display: flex;
+  flex-direction: row;
+
+}
+.image1{
+  width: 9em;
+  height: 5em;
+  margin: 0.5em 0;
+  margin-bottom: 0;
+  margin-right: 0.5em;
+  background-color: #e05151;
+}
+
+.last{
+  margin-right: 0;
+}
+.product-name-heading h1{
+  margin: 0;
+}
+.product-detail-heading{
+  display: flex;
+  flex-direction: column;
+  width: 34%;
+  padding-left: 1.5em;
+  justify-content: space-between;
+}
+
+.product-price{
+  display: flex;
+  flex-direction: row;
+}
+
+.strikethrough-price{
+  text-decoration: line-through;
+  margin-right: .5em;
+}
+
+.product-buttons{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  bottom: 0;
+
+}
+
+.checked{
+  color: #f3784d;
+}
+
+.add-to-carts{
+  width: 100%;
+  color: #fff;
+  background-color: #f3784d;
+  transition-duration: 0.4s;
+  text-align: center;
+  padding: 1em 1em;
+}
+
+.add-to-carts h3{
+  /* font-weight: 900; */
+  margin: 0;
+}
+.left{
+  margin-right: 0.5em;
+}
+
+.right{
+  margin-left: 0.5em;
+}
+.button-submits{
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #f3784d;
+  border-color: #f3784d;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.button-submits:hover, .button-submits:focus{
+  background-color: #fff;
+  color: #f3784d;
+  border-color: #f3784d;
+  /* border-width: 0.2em; */
+  border-style: solid;
+}
+
+.button-submits:active{
+  animation: pulse-orange 0.2s 1 ease-out;
+}
+
+@keyframes pulse-orange {
+  from {
+    box-shadow:  0 0 0 0 rgba(255, 255, 255, 1), /*white*/
+                 0 0 0 0 rgba(243,120,77, 1); /*orange border*/
+  }
+  to {
+    box-shadow:  0 0 0 0.65em rgba(255, 255, 255, 0.5),
+                 0 0 0 1em rgba(243,120,77, 0);
+  }
+}
+/*
+.button-pro {
+	float: left;
+	min-width: 150px;
+	max-width: 250px;
+	display: block;
+	padding: 1em 1em;
+  padding: 0.9em;
+	border: 1px solid #1b2ae026;
+	background: none;
+	color: inherit;
+	vertical-align: top;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.button-pro:focus {
+	outline: none;
+}
+
+.button-pro.button--aylen {
+	background: #fff;
+	color: #37474f;
+	overflow: hidden;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+} */
+
+
+.overview{
+  order: 2;
+  width: 100%;
+  height: 50vh;
+  /* border: solid black 2px; */
+}
+
+.spec-list{
+  order: 3;
+  width: 100%;
+  /* border: solid black 2px; */
+}
+.spec{
+  width: 100%;
+  height: 5em;
+  /* border: solid black 2px; */
+
+}
+.grey{
+  background-color: #bcbcbc;
+}
+.white{
+  background-color: #fff;
+}
+
+.similar-products{
+  order: 4;
+  width: 100%;
+}
+.product-list{
+  display: flex;
+  flex-direction: row;
+}
+/* .single-product{
+  flex-grow: 1;
+  min-width: 16.322em;
+  height: 28.95em;
+  background-color: #e1e1e1;
+  margin-left: 1.403em;
+  margin-bottom: 1.403em;
+  border-radius: 9px;
+
+} */
+/* .single-product:hover, .single-product:focus{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+.reviews{
+  order: 5;
+  width: 100%;
+  height: 50vh;
+  /* border: solid black 2px; */
+}
+.single-review{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+.top{
+  order: 1;
+  display: flex;
+  flex-direction: row;
+}
+.profile{
+  width: 6em;
+  height: 6em;
+  background-color: #bcbcbc;
+  border: solid black 1px;
+  border-radius: 100px;
+
+}
+.name-star{
+  width: 9em;
+  height: 6em;
+  background-color: #bcbcbc;
+  border: solid black 1px;
+}
+.name{
+  width: 100%;
+  height: 3em;
+  background-color: #f24444;
+}
+.star{
+  width: 100%;
+  height: 3em;
+  background-color: #4452f2;
+}
+
+.review-copy{
+  order: 2;
+  width: 100%;
+  height: 10em;
+  margin-left: 6em;
+  background-color: #bcbcbc;
+  border: solid black 1px;
+
+}

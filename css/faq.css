@@ -1,0 +1,43 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+.faq{
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  text-align: center;
+  font-weight: 900;
+}
+
+.question{
+  display: flex;
+  flex-direction: column;
+}
+
+.question-title{
+  padding: 0;
+  margin-top: 1em;
+  padding-left: 1.5em;
+}
+
+
+.g{
+  background-color: #adadad;
+}
+
+.question p{
+  padding-left: 1.5em;
+  padding-bottom: 1em;
+}
+
+.mini-links{
+	display: flex;
+	position: absolute;
+	flex-direction: row;
+	margin: 1em 16em;
+	margin-bottom: 0;
+}
