@@ -1,3 +1,6 @@
+.homepage{
+  margin-bottom: 4em;
+}
 .banner{
   width: 100%;
   height: 87vh;
@@ -18,7 +21,7 @@
   right: 16em;*/
   /*position: relative;*/
 
-  height: 50%;
+  /* height: 50%; */
   width: 100%;
   background-color: red;
   display: flex;
@@ -27,7 +30,7 @@
 }
 
 .ad-card{
-  width: 31%;
+  /* width: 31%; */
   background-color: white;
   margin: 1em;
   align-items: center;
@@ -52,7 +55,7 @@
   margin-bottom: 1em;
   background-color: #fb53bb;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 0;
   justify-content: center;
@@ -61,7 +64,7 @@
 .filament-row{
 	display: flex;
 	flex-direction: row;
-	width: 100%;
+	/* width: 100%; */
 	margin: 0;
 	padding: 0;
 	justify-content: space-between;
@@ -70,23 +73,31 @@
 .item{
 	display: flex;
 	flex-direction: column;
-	/*flex-grow: 1;*/
+  align-items: center;
+	flex-grow: 1;
 	/*width: 2em;
 	height: 2em;*/
-	/*margin: 0.7em;*/
+	margin: 0.5em 0.5em;
+  width: 12em;
+  height: 10em;
+  padding: 0.5em;
 	background-color: #f7941f;
 }
 
 .temp-img1{
-	width: 6em;
-	height: 4em;
-	background-color: grey;
+	/* width: 6em;
+	height: 4em; */
+	/* background-color: grey; */
 }
 
 .temp-img2{
-	width: 6em;
-	height: 4em;
-	background-color: lightgrey;
+	/* width: 6em;
+	height: 4em; */
+	/* background-color: lightgrey; */
+}
+
+.item img{
+  width: 7em;
 }
 
 .item h4{
@@ -162,4 +173,3 @@
 	width: 100%;
 	height: 40%;
 }*/
-
