@@ -1,3 +1,8 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 .homepage{
   margin-bottom: 4em;
 }
@@ -11,7 +16,7 @@
   flex-direction: row;
   /*bottom: 0;*/
   align-items: flex-end;
-  padding: 0 16em;
+  /* padding: 0 16em; */
 }
 
 .banner-cards-container{
@@ -21,20 +26,21 @@
   right: 16em;*/
   /*position: relative;*/
 
-  /* height: 50%; */
+  height: 50%;
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .ad-card{
-  /* width: 31%; */
+  width: 422.4px;
   background-color: white;
   margin: 1em;
   align-items: center;
   border-radius: 9px;
+
 }
 
 .ad-card h2{
@@ -53,14 +59,16 @@
   margin-right: 1em;
   margin-left: 1em;
   margin-bottom: 1em;
-  background-color: #fb53bb;
+  /* background-color: #fb53bb; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0;
   justify-content: center;
 }
-
+.refill-card h4{
+  /* text-decoration: none; */
+}
 .filament-row{
 	display: flex;
 	flex-direction: row;
@@ -77,11 +85,12 @@
 	flex-grow: 1;
 	/*width: 2em;
 	height: 2em;*/
-	margin: 0.5em 0.5em;
+	margin: 0.1em 0.1em;
   width: 12em;
-  height: 10em;
+  /* height: 10em; */
   padding: 0.5em;
-	background-color: #f7941f;
+	background-color: #f2fafc;
+  text-decoration: none;
 }
 
 .temp-img1{
@@ -97,11 +106,16 @@
 }
 
 .item img{
-  width: 7em;
+  width: 5.6em;
 }
 
 .item h4{
+  text-align: center;
+  font-size: 16px;
 	margin: 0;
+  font-weight: normal;
+  margin-top: 0.6em;
+  padding: 0 0.9em;
 }
 
 .on-sale{
