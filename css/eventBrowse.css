@@ -78,8 +78,10 @@
 .event-description{
   display: flex;
   flex-direction: column;
-  margin: 0.563em 0 0 0;
+  margin: 0.563em;
   /*margin: 0.25em;*/
+  justify-content: space-between;
+
 }
 
 .event-description h1{
@@ -89,6 +91,41 @@
 
 .event-description h3{
   margin: 0;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0.563em;
+}
+.register-button h3{
+  margin: 0;
+}
+
+.register-button{
+  /*width: 100%;*/
+  color: #fff;
+  transition-duration: 0.4s;
+  text-align: center;
+  align-content: center;
+  padding: 0.5em 1em;
+
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #f3784d;
+  border-color: #f3784d;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.register-button:hover, .register-button:focus{
+  background-color: #fff;
+  color: #f3784d;
+  border-color: #f3784d;
+  /* border-width: 0.2em; */
+  border-style: solid;
 }
 
 ul{
