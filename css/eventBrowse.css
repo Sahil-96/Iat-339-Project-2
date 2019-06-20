@@ -7,39 +7,89 @@
 
 .master-event-card-block-container{
   display: block;
+  width: 100%;
 }
 
 .page-content-container{
   display: flex;
 }
 .product-heading{
-  margin-left: 16em;
-  margin-top: 10em;
+/*  margin-left: 16em;*/
+    margin-top: 100px;
 }
 
 .event-card-container{
   padding-left: 1.403em;
   padding-right: 1.403em;
-
+  width: 100%;
 }
 
 .event-card-list{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /*flex-wrap: wrap;*/
   list-style: none;
   padding-right: 0;
   margin-right: 0;
 }
 .event-card{
-  flex: 0,1,auto;
-  /*width: 100%;*/
-  min-width: 45em;
+  /*flex: 0,1,auto;*/
+  display:flex;
+  flex-direction: row;
+  width: 100%;
   /*width: 100vw;*/
-  height: 6em;
+  /*height: 6em;*/
   background-color: #e1e1e1;
   margin-bottom: 1.403em;
-  border-radius: 9px;
+  /*border-radius: 9px;*/
 }
+
+.event-date{
+  display: flex;
+  flex-direction: column;
+  margin: 0.563em;
+}
+
+.event-date h1{
+  /*margin: 0 0.25em 0 0.25em;*/
+  margin: 0;
+  line-height: 0.921em;
+  /*justify-content: center;*/
+}
+
+.event-date h2{
+  /*margin: 0 0.4em 0em 0.4em;*/
+  margin: 0;
+  line-height: 1.111em;
+}
+
+.event-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.75em 0.4em 0.6em 0.4em;
+}
+
+.event-details p{
+  margin: 0;
+}
+
+.event-description{
+  display: flex;
+  flex-direction: column;
+  margin: 0.563em 0 0 0;
+  /*margin: 0.25em;*/
+}
+
+.event-description h1{
+  margin: 0;
+  line-height: 0.921em;
+}
+
+.event-description h3{
+  margin: 0;
+}
+
 ul{
   list-style: none;
   margin: 0;

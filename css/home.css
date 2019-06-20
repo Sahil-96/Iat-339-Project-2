@@ -1,7 +1,6 @@
 .home{
   position: relative;
-  margin-top: 8.2em;
-  margin-bottom: 16em;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -43,21 +42,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding: 4em 1em;;
-  justify-content: center;
 }
 
 .item{
-  flex-grow: 1;
-  width: 8em;
-  height: 8em;
-  margin: 0.7em;
-  background-color: #f7941f;
-}
-
-/* .item{
   flex-grow: 1;
   width: 10em;
   height: 10em;
   margin: 0.3em;
   background-color: #f7941f;
-} */
+}

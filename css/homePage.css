@@ -1,0 +1,165 @@
+.banner{
+  width: 100%;
+  height: 87vh;
+  background-color: #1e6a99;
+  /*position: relative;*/
+  margin-top: 6em;
+  display: flex;
+  flex-direction: row;
+  /*bottom: 0;*/
+  align-items: flex-end;
+  padding: 0 16em;
+}
+
+.banner-cards-container{
+  /*position: absolute;
+  top: 20em;
+  left: 16em;
+  right: 16em;*/
+  /*position: relative;*/
+
+  height: 50%;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ad-card{
+  width: 31%;
+  background-color: white;
+  margin: 1em;
+  align-items: center;
+  border-radius: 9px;
+}
+
+.ad-card h2{
+	margin:0;
+	padding: 0.5em 1em;
+}
+
+.ad-content{
+  padding: 1em;
+  width: 100%;
+  height: 40%;
+  background-color: #fb53bb;
+}
+
+.refill-card{
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  background-color: #fb53bb;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+}
+
+.filament-row{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+}
+
+.item{
+	display: flex;
+	flex-direction: column;
+	/*flex-grow: 1;*/
+	/*width: 2em;
+	height: 2em;*/
+	/*margin: 0.7em;*/
+	background-color: #f7941f;
+}
+
+.temp-img1{
+	width: 6em;
+	height: 4em;
+	background-color: grey;
+}
+
+.temp-img2{
+	width: 6em;
+	height: 4em;
+	background-color: lightgrey;
+}
+
+.item h4{
+	margin: 0;
+}
+
+.on-sale{
+	width: 100%;
+}
+
+.multiview-cards{
+	display: flex;
+	flex-direction: row;
+	background-color: grey;
+	width: 100%;
+	height: 14em;
+}
+
+.section-tab-master{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+/*.banner-image-container{
+	display: flex;
+	margin-top: 6em; *//*this is to offset due to Nav Bar*/
+/*	width: 100%;
+	height: 100vh;
+	background-color: #e1e1e1;
+}
+
+.personal-ad-cards-container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 50%;
+	position: relative;
+	bottom: 0;
+	background-color: red;
+}
+
+
+.personal-ad-card{
+	background-color: white;
+	width: 31%;
+	height: 100%;
+	margin: 1em;
+}
+
+
+.personal-ad-card-inner-content{
+	width: 100%
+	margin: 1.563;
+}
+
+.filament-boxs-container{
+	flex-direction: column;
+	position: relative;
+	bottom: 0;
+}
+
+.two-filament-boxes{
+	flex-direction: row;
+}
+
+.individual-filament-box{
+	flex-direction: column;
+	width: 50%;
+}
+
+.filament-img{
+	width: 100%;
+	height: 40%;
+}*/
+
