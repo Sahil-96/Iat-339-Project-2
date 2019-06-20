@@ -2,18 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Product Page</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Home Page</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/homePage.css">
     <link rel="stylesheet" href="css/headerNav.css">
     <link rel="stylesheet" href="css/footer.css">
+
   </head>
+
   <body>
     <nav class="container-nav">
-
-        <a class="logo-nav" href="index.html">Logo</a>
+        <div class="logo-nav">
+          <img src="img/logo_new.jpeg" alt="logo" width="150rem">
+        </div>
 
         <div class="searchbar-nav">
           <form>
@@ -22,112 +25,159 @@
           </form>
         </div>
 
-
       <div class="menu-nav">
-        <a class="button button-nav" href="productsMultiview.html">Product</a>
-        <a class="button button-nav" href="eventBrowse.html">Event</a>
-        <a class="button button-nav" href="aboutUs.html">Service</a>
-        <a class="user" href="checkout.html"><img src="img/user-black.png" alt="user icon"></a>
-        <a class="cart" href="checkout.html"><img src="img/cart-black.png" alt="cart icon"></a>
+        <button class="button button--aylen button--round-l button--text-thick left">Browse</button>
+        <button class="button button--aylen button--round-l button--text-thick">Events</button>
+        <button class="button button--aylen button--round-l button--text-thick right">About</button>
       </div>
-
     </nav>
 
 
 
-    <div class="home">
       <div class="banner">
+        <div class="banner-cards-container">
+          
+          <div class="ad-card">
+            <h2>Need a Refill?</h2>
+            <div class="refill-card">
+              <div class="filament-row">
+                <div class="item">
+                  <div class="temp-img1"></div>
+                  <h4>Filament 1</h4>
+                </div>
+                <div class="item">
+                  <div class="temp-img2"></div>
+                  <h4>Filament 2</h4>
+                </div>
+              </div><!--end of row-->
+              <div class="filament-row">
+                <div class="item">
+                  <div class="temp-img2"></div>
+                  <h4>Filament 3</h4>
+                </div>
+                <div class="item">
+                  <div class="temp-img1"></div>
+                  <h4>Filament 4</h4>
+                </div>
+              </div><!--end of row-->
+            </div><!--end of refill card-->
+          </div><!--end of add card -->
 
-      </div>
-      <div class="four-boxes">
-        <div class="single-box">
-          <div class="special">
-            <div class="item">
+          <div class="ad-card">
+            <h2>Upcoming Events</h2>
+            <div class="event-card">
+            </div>
+          </div>
+          <div class="ad-card">
+            <h2>Your Wish Came True!</h2>
+            <div class="ad-content">
 
             </div>
-            <div class="item">
+          </div>
+        </div> <!--end of banner cards container-->
+      </div><!-- end of banner -->
 
+
+
+      <div class="page-content-container">
+        <div class="section-tab-master">
+          <div class="on-sale">
+            <h3>New Products on Sale!</h3>
+            <div class="multiview-cards">
             </div>
-            <div class="item">
+          </div><!-- End of the on sale row -->
 
+          <div class="on-sale">
+            <h3>Popular Filaments</h3>
+            <div class="multiview-cards">
             </div>
-            <div class="item">
+          </div><!-- End of the on sale row -->
 
+          <div class="on-sale">
+            <h3>Anything you want</h3>
+            <div class="multiview-cards">
             </div>
+          </div><!-- End of the on sale row -->
 
-          </div>
-        </div>
-        <div class="single-box">
-          <div class="mini-box">
+          <div class="on-sale">
+            <h3>anything you want</h3>
+            <div class="multiview-cards">
+            </div>
+          </div><!-- End of the on sale row -->
 
-          </div>
-        </div>
-        <div class="single-box">
-          <div class="mini-box">
+      </div><!-- end of the entire page container-->
+      
 
-          </div>
-        </div>
-        <div class="single-box">
-          <div class="mini-box">
+    
 
-          </div>
-        </div>
 
-      </div>
 
-    </div>
+<!--
+    <div class="banner-image-container">
+      <div class="page-content-container">
+        <div class="personal-ad-cards-container">
+          
+    <!--Refills card-->
+ <!--         <div class="personal-ad-card">
+            <h2>Need a Refill?</h2>
+<!--            <div class="personal-ad-card-inner-content">
+              <div class="filament-boxs-container">
+                
+                <div class="two-filament-boxes">
+              
+                  <div class="individual-filament-box">
+                    <div class="filament-img">
+                    </div>
+                    <h4>Slate Grey</h4>
+                  </div><!--end of img+text-->
+<!--
+                  <div class="individual-filament-box">
+                    <div class="filament-img">
+                    </div>
+                    <h4>Crimson Red</h4>
+                  </div><!--end of img+text-->
+<!--                
+                </div><!--end of the row of two filaments-->
+<!--
+                <div class="two-filament-boxes">
+              
+                  <div class="individual-filament-box">
+                    <div class="filament-img">
+                    </div>
+                    <h4>Slate Grey 2</h4>
+                  </div><!--end of img+text-->
+<!--
+                  <div class="individual-filament-box">
+                    <div class="filament-img">
+                    </div>
+                    <h4>Crimson Red 2</h4>
+                  </div><!--end of img+text-->
+ <!--               
+                </div><!--end of the row of two filaments-->
+<!--
+              </div><!--end of master fillments container-->
+<!--            </div><!--end of inner space-->
+<!--          </div><!--end of the whole card-->
 
-    <div class="footer">
+    <!--Your upcoming Events-->
+<!--          <div class="personal-ad-card">
+ <!--           <h2>Next event in your area</h2>
+            <div class="personal-ad-card-inner-content">
+            </div><!--end of inner space-->
+ <!--         </div><!--end of the whole card-->
 
-      <div class="layer1">
-        <div class="services">
-          <h2>SERVICES</h2>
-          <ul>
-            <li>Local Printing</li>
-            <li>Consulting</li>
-            <li>Marketing</li>
-          </ul>
+    <!--Wishlist items on Sale-->
+ <!--         <div class="personal-ad-card">
+<!--            <h2>Your wish came true!</h2>
+            <div class="personal-ad-card-inner-content">
+            </div><!--end of inner space-->
+<!--          </div><!--end of the whole card-->
 
-        </div>
-        <div class="company">
-          <h2>COMPANY</h2>
-          <ul>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Our Blog</li>
-          </ul>
+<!--        </div><!-- end of 3 cards container -->
+<!--      </div><!-- end of master side Margins -->
+<!--    </div><!--end of the banner container-->
 
-        </div>
-        <div class="support">
-          <h2>SUPPORT</h2>
-          <ul>
-            <li>Support Page</li>
-            <li>FAQ</li>
-            <li>Terms of Use</li>
-          </ul>
-        </div>
-        <div class="footer-logo">
-          LOGO
-        </div>
-      </div>
 
-      <div class="layer2">
-        <div class="facebook social">
-
-        </div>
-        <div class="youtube social">
-
-        </div>
-        <div class="twitter social">
-
-        </div>
-      </div>
-
-      <div class="layer3">
-        <h4>Copyright 2019 | Simon Fraser University, Surrey | 123-456-7890 | support@company.com</h4>
-      </div>
-
-    </div>
 
   </body>
 </html>

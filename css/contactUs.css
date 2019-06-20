@@ -1,0 +1,21 @@
+
+
+
+
+.map-container{
+	margin-top: 6em;
+}
+
+.mapouter{
+/*	position:relative;
+*/	text-align:right;
+	height:500px;
+	width:600px;
+}
+
+.google-map-canvas {
+	overflow:hidden;
+	background:none!important;
+	height:500px;
+	width:600px;
+}
