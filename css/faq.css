@@ -6,6 +6,8 @@
   margin-top: 10em;
   display: flex;
   flex-direction: column;
+  margin-bottom: 4em;
+
 }
 
 .title{
@@ -22,22 +24,23 @@
   padding: 0;
   margin-top: 1em;
   padding-left: 1.5em;
+
 }
 
 
 .g{
-  background-color: #adadad;
+  background-color: #ff784e;
 }
 
 .question p{
   padding-left: 1.5em;
   padding-bottom: 1em;
+  margin-right: 2em;
+
 }
 
-.mini-links{
-	display: flex;
-	position: absolute;
-	flex-direction: row;
-	margin: 1em 16em;
-	margin-bottom: 0;
+.g ul{
+  list-style: none;
+  padding-left: 1.5em;
+  margin-top: 0;
 }
