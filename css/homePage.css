@@ -35,7 +35,7 @@
 }
 
 .ad-card{
-  width: 422.4px;
+  min-width: 422.4px;
   background-color: white;
   margin: 1em;
   align-items: center;
@@ -52,7 +52,7 @@
   padding: 1em;
   width: 100%;
   height: 40%;
-  background-color: #fb53bb;
+  /* background-color: #fb53bb; */
 }
 
 .refill-card{
@@ -135,6 +135,99 @@
 	flex-direction: column;
 	width: 100%;
 }
+
+
+
+/* Upcoming events--------------------------------------------------------------- */
+
+.two-events{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1em;
+}
+.event-row{
+  width: 100%;
+  height: 50%;
+  background-color: #cb4df3;
+  border: 1px solid black;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+}
+.event-row h4{
+  margin: 0;
+}
+.date-and-month{
+  width: 30%;
+  border: 1px solid black;
+  text-align: center;
+  padding: 2em 0;
+
+}
+.date-and-month h4{
+  font-size: 30px;
+}
+.event-main-details{
+  width: 70%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0;
+  padding-left: 0.4em;
+  justify-content: center;
+
+}
+.time-and-genre{
+  margin-top: 0.5em;
+}
+
+.event-title h4{
+  font-size: 25px;
+}
+
+.time-and-genre h4{
+  font-weight: 500;
+  font-size: 22px;
+}
+
+
+/* Upcoming events--------------------------------------------------------------- */
+
+/* wishlist----------------------------------------------------------------------- */
+
+.wishlist{
+  margin: 1em;
+  height: 70%;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+.wishlist-left{
+  width: 50%;
+}
+
+.wishlist-left img{
+  width: 200px;
+}
+
+.wishlist-right{
+  display: flex;
+  flex-direction: column;
+}
+
+.old-new-price{
+    display: flex;
+    flex-direction: row;
+}
+
+.old{
+  text-decoration: line-through;
+}
+/* wishlist----------------------------------------------------------------------- */
+
 
 /*.banner-image-container{
 	display: flex;
