@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/secondHeader.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+  </head>
+  <body>
+
+    <nav class="container-nav">
+      <div class="top-nav">
+        <a class="logo-nav" href="index.html">Logo</a>
+
+        <div class="searchbar-nav">
+          <form>
+            <!-- Inputs -->
+            <input id="search" placeholder="Search for a product" type="text">
+          </form>
+        </div>
+
+
+        <div class="menu-nav">
+          <a class="button button-nav" href="productsMultiview.html">Product</a>
+          <a class="button button-nav" href="eventBrowse.html">Event</a>
+          <a class="button button-nav" href="aboutUs.html">Service</a>
+          <a class="user" href="checkout.html"><img src="img/user-black.png" alt="user icon"></a>
+          <a class="cart" href="checkout.html"><img src="img/cart-black.png" alt="cart icon"></a>
+        </div>
+      </div>
+      <div class="divider">
+
+      </div>
+      <div class="bottom-nav">
+        <div class="mini-links">
+          <a class="in-text" href="aboutUs.html"><h4>About Us</h4></a>
+          <a class="in-text" href="faq.html"><h4>FAQs</h4></a>
+        </div>
+      </div>
+
+
+    </nav>
+
+    <div class="faq page-content-container">
+      <h2 class="title">Frequently Asked Question</h2>
+
+      <div class="question">
+        <div class="question-and-button">
+          <h3 class="question-title">What is 3D printing?</h3>
+          <div class="dropdown-button">
+          </div>
+        </div>
+        <p>3D printing is a digital manufacturing process that makes it possible to create a physical object from a 3D file. The object is formed by applying successive layers of solid material. 3D Printing also known as Additive Manufacturing as a general term that covers various techniques.</p>
+      </div>
+
+      <div class="question ">
+        <h3 class="question-title">How does 3D printing work?</h3>
+        <p>3D Printing technologies build an object layer by layer to create a complex shape. In order to build this object we need a 3D file that contains accurate information about the geometry of the part. Then the information in this 3D file is sent to the 3D-printer that will build up the material matching the 3D file.</p>
+      </div>
+
+      <div class="question g">
+        <h3 class="question-title">My file is in .obj format: how can I make colours and textures appear?</h3>
+        <p>For this particular format, you must attach, along with the .obj model, the indexation file for colours and textures (..mtl), the texture files (image formats .jpg, .png, .gif or others) and include them together in a zip archive.It's this .zip that you have to upload to the website. So .zip = .obj + .mtl + .jpg (or other picture formats).</p>
+      </div>
+
+      <div class="question ">
+        <h3 class="question-title">What is the maximum texture size for a 3D model & how can i reduce the size of my textures?</h3>
+        <p>The recommended maximum size for your upload is 50MB, and that includes the texture size. So you should try to reduce your texture size appropriately for your 3D file size, so that the whole package fits the 50MB soft limit. Check out this article, in which we check the impact of a lower texture resolution on the final print, and give you advice on the best compression to optimize the 3D printed texture resolution.</p>
+      </div>
+
+      <div class="question g">
+        <h3 class="question-title">How can I orientate my 3D model?</h3>
+        <p>When you upload your file on our platform, you can choose the orientation of your model in the 3D printer during the 3D printing process. The orientation impacts which part of the object cools down first (the layers manufactured first will cool down first), and the surface aspect of the object (depending on the orientation and shape of your model, the layers can be more or less visible). Once you've uploaded your file, click on the 'optimize' tab to customize the orientation of your model.</p>
+      </div>
+
+      <div class="question ">
+        <h3 class="question-title">What happens after I place an order?</h3>
+        <p>After you’ve placed your order, it is 3D printed or laser cut according to your chosen production method, prioritizing speed. It is then shipped directly to the address specified.</p>
+      </div>
+
+      <div class="question g">
+        <h3 class="question-title">What are your shipping methods?</h3>
+        <p>We offer you several ways to get your finished design:</p>
+        <ul>
+          <li>+ Classic delivery: your items are delivered by a parcel service and you typically receive it 2 days after production is complete
+        </li>
+        <li>+ Factory Pickup: pick up your items directly at one of our production centers
+        </li>
+        <li>+ Courier delivery: be delivered in the day only in San Francisco
+        </li>
+        </ul>
+      </div>
+
+      <div class="question ">
+        <h3 class="question-title">How can I design an articulated model? What gap should I leave for my articulated models?</h3>
+        <p>
+          Our machines build your models layer by layer, and can therefore build any type of model, even with complex assemblies.<br>
+          If you want to produce an articulated model, you just need to leave an appropriate gap between parts of your model so that separate parts are not joined during build. This lets you make pivot balls, cylindrical joints etc.<br>
+          We recommend the use of white plastic to produce such items. With this material, a 0.02 in (0.5 mm) gap is advisable for the articulation to work correctly.
+        </p>
+      </div>
+
+      <div class="question g">
+        <h3 class="question-title">What does the error message 'No geometric information found in file' mean?</h3>
+        <p>When exporting your file, if you don't select your model, the file will be empty. This can be the reason why we don't find geometric information in your file. There's another case when this message can appear. We sometimes have an issue reading a file created with Sketchup. If you used Sketchup and you're getting this error message, try exporting your file on a collada .dae version.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+
+      <div class="layer1">
+        <div class="services">
+          <h2>SERVICES</h2>
+          <ul>
+            <li>Local Printing</li>
+            <li>Consulting</li>
+            <li>Marketing</li>
+          </ul>
+
+        </div>
+        <div class="company">
+          <h2>COMPANY</h2>
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Our Blog</li>
+          </ul>
+
+        </div>
+        <div class="support">
+          <h2>SUPPORT</h2>
+          <ul>
+            <li>Support Page</li>
+            <li>FAQ</li>
+            <li>Terms of Use</li>
+          </ul>
+        </div>
+        <div class="footer-logo">
+          LOGO
+        </div>
+      </div>
+
+      <div class="layer2">
+        <div class="facebook social">
+
+        </div>
+        <div class="youtube social">
+
+        </div>
+        <div class="twitter social">
+
+        </div>
+      </div>
+
+      <div class="layer3">
+        <h4>Copyright 2019 | Simon Fraser University, Surrey | 123-456-7890 | support@company.com</h4>
+      </div>
+
+    </div>
+
+
+
+
+  </body>
+</html>

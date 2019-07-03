@@ -1,0 +1,168 @@
+.page-content-container{
+	background-color: lightgrey;
+	display: flex;
+	flex-direction: column;
+}
+
+.top-banner{
+	margin-top: 6em;
+	display: flex;
+	flex-direction: row;
+}
+
+.banner-image{
+	width: 66%;
+	height: 33%;
+}
+
+.banner-text-container{
+	display: flex;
+	flex-direction: column;
+	width: 34%;
+	padding: 2em;
+	background-color: green;
+}
+
+.banner-text-date-container{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top:0;
+	/*height: 33%;*/
+	background-color: red;
+}
+
+.month h4{
+	margin: 0;
+}
+
+.day h4{
+	margin: 0;
+}
+
+.banner-text-price-container h4{
+	margin:0;
+}
+
+.banner-text-description-container{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	justify-content: center;
+	/*height: 33%;*/
+	background-color: orange;
+}
+
+.banner-text-price-container{
+	position: relative;
+	bottom: 0;
+	/*height: 33%;*/
+	background-color: yellow;
+}
+
+.tickets-bar-container{
+	display: flex;
+	flex-direction: row;
+}
+
+.ticket-bar-left-column{
+	width: 66%;
+	background-color: red;
+}
+
+.ticket-bar-right-column{
+	width: 34%;
+	/*margin: 1em,1.5em;*/
+}
+
+.button-register{
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #f3784d;
+  border-color: #f3784d;
+  border-width: 2px;
+  border-style: solid;
+  width: 100%;
+  margin: 1em, 1.5em;
+  text-align: center;
+  color: white;
+}
+
+.button-register h4{
+	margin:0;
+}
+
+.button-register:hover, .button-register:focus{
+  background-color: #fff;
+  color: #f3784d;
+  border-color: #f3784d;
+  /* border-width: 0.2em; */
+  border-style: solid;
+}
+
+.core-content-container{
+	display: flex;
+	flex-direction: row;
+	background-color: green;
+}
+
+.left-content-conatiner{
+	width: 66%;
+	padding-left: 8em;
+	padding-right: 8em;
+}
+
+.right-content-container{
+	width: 34%;
+	padding: 2em;
+	background-color: blue;
+}
+
+.right-content-container p{
+	margin:0;
+}
+
+.right-content-container h4{
+	margin-bottom: 0.5em;
+}
+
+
+
+
+/*.banner-image{
+	flex-grow: 1;
+	margin-top: 6em; *//*this is to offset due to Nav Bar*/
+/*	width: 100%;
+	height: 50vh;
+	background-color: #e1e1e1;
+}
+
+.page-content-container{
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+}
+
+.core-content-container{
+	display: flex;
+	flex-direction: row;
+	background-color: red;
+}
+
+.left-content-conatiner{
+	width: 60%;
+}
+
+.right-content-container{
+	width: 40%;
+	padding-left: 10%;
+}
+
+.sold-out h3{
+	text-align: center;
+}
+
+.sold-out{
+
+}*/

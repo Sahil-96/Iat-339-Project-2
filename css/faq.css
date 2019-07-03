@@ -1,0 +1,55 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+.faq{
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4em;
+
+}
+
+.title{
+  text-align: center;
+  font-weight: 900;
+}
+
+.question{
+  display: flex;
+  flex-direction: column;
+}
+
+.question-title{
+  padding: 0;
+  margin-top: 1em;
+  padding-left: 1.5em;
+
+}
+
+.question-and-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dropdown-button{
+  width: 2em;
+  height: 2em;
+  background-color: blue;
+}
+.g{
+  background-color: #ff784e;
+}
+
+.question p{
+  padding-left: 1.5em;
+  padding-bottom: 1em;
+  margin-right: 2em;
+
+}
+
+.g ul{
+  list-style: none;
+  padding-left: 1.5em;
+  margin-top: 0;
+}

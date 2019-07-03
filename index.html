@@ -2,16 +2,779 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>...</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="css/headerNav.css">
+    <link rel="stylesheet" href="css/media/homePage-media.css">
+    <link rel="stylesheet" href="css/productCard.css">
+    <link rel="stylesheet" href="css/footer.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
+
   <body>
+    <nav class="container-nav">
 
-  	<h2> Conflict! </h2>
+        <a class="logo-nav" href="index.html">Logo</a>
 
-  	<p>
-  		I think this is the best line
-      I am just making a change
-  	</p>
+        <div class="searchbar-nav">
+          <form>
+            <input id="search" placeholder="Search for a product" type="text">
+          </form>
+        </div>
+
+
+      <div class="menu-nav">
+        <a class="button button-nav" href="productsMultiview.html">Product</a>
+        <a class="button button-nav" href="eventBrowse.html">Event</a>
+        <a class="button button-nav" href="aboutUs.html">Service</a>
+        <a class="user" href="checkout.html"><img src="img/user-black.png" alt="user icon"></a>
+        <a class="cart" href="checkout.html"><img src="img/cart-black.png" alt="cart icon"></a>
+      </div>
+
+    </nav>
+
+    <div class="homepage">
+
+        <div class="banner">
+          <img src="img/anycubic-photon-3d-printer-review-xxl-2.jpg" alt="image of our 3d print cafe" class="banner-image">
+
+          <div class="banner-cards-container page-content-container">
+            <div class="ad-card">
+              <h2>Need a Refill?</h2>
+              <div class="refill-card">
+                <div class="filament-row">
+                  <a href="productDetails.html">
+                    <div class="item">
+                        <img src="img/fila1.png" alt="filament1">
+                      <h4>PLA Filament - Black 1.75mm</h4>
+                    </div>
+                  </a>
+                  <a href="productDetails.html">
+                    <div class="item">
+                      <img src="img/fila2.png" alt="filament2">
+                      <h4>PLA Filament - White 2.75mm</h4>
+                    </div>
+                  </a>
+                </div><!--end of row-->
+                <div class="filament-row">
+                  <a href="productDetails.html">
+                    <div class="item">
+                      <img src="img/fila3.png" alt="filament3">
+                      <h4>PLA Filament - Green 2.85mm</h4>
+                    </div>
+                  </a>
+                  <a href="productDetails.html">
+                    <div class="item">
+                      <img src="img/fila4.png" alt="filament4">
+                      <h4>PLA Filament - Crimson 1.59mm</h4>
+                    </div>
+                  </a>
+                </div><!--end of row-->
+              </div><!--end of refill card-->
+            </div><!--end of add card -->
+
+            <div class="ad-card">
+              <h2>Upcoming Events</h2>
+              <div class="two-events">
+                <div class="event-row">
+                  <div class="date-and-month">
+                    <div class="date">
+                      <h4>29</h4>
+                    </div>
+                    <div class="month">
+                      <h4>Jun</h4>
+                    </div>
+                  </div>
+                  <div class="vertical-line">
+
+                  </div>
+                  <div class="event-main-details">
+                    <div class="event-title">
+                      <h4>Theme: Dystopia/Utopia</h4>
+                    </div>
+                    <div class="time-and-genre">
+                      <h4>9:00 - 5:00 | Competition</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="event-row">
+                  <div class="date-and-month">
+                    <div class="date">
+                      <h4>4</h4>
+                    </div>
+                    <div class="month">
+                      <h4>Jul</h4>
+                    </div>
+                  </div>
+                  <div class="vertical-line">
+
+                  </div>
+                  <div class="event-main-details">
+                    <div class="event-title">
+                      <h4>Theme: Dystopia/Utopia</h4>
+                    </div>
+                    <div class="time-and-genre">
+                      <h4>9:00 - 5:00 | Competition</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="event-card">
+              </div> -->
+            </div>
+
+            <div class="ad-card">
+              <h2>Your Wish Came True!</h2>
+              <div class="wishlist">
+                <div class="wishlist-left">
+                  <img src="img/product-wish.png" alt="your-wishlist-img">
+                </div>
+                <div class="wishlist-right">
+                  <div class="spacer">
+
+                  </div>
+                  <h3>Formlabs II - 3D Printer</h3>
+                  <div class="old-new-price">
+                    <h4 class="old">$1399</h4>
+                    <h4>$1200</h4>
+                  </div>
+                  <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <h4 class="size">5.7 × 5.7 × 6.9 IN</h4>
+                </div>
+              </div>
+            </div>
+          </div> <!--end of banner cards container-->
+        </div><!-- end of banner -->
+
+        <div class="bottom-area page-content-container">
+          <div class="section-tab-master">
+            <div class="on-sale">
+              <h3>New Products on Sale!</h3>
+              <div class="multiview-cards">
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product1.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">THE MAKERBOT MINI+</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$1299</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>11.6 X 13.8 X 15.0</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">ROBO R2</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$1499</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>16.7 x 23.7 x 16.6</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product2.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">Formlabs Form II</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$3150</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>5.7 × 5.7 × 6.9</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product3.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">3D Printer Generic</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$1099</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>7.6 x 5.6 x 9.8</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+            <!-- //End of the on sale row// -->
+
+            <div class="on-sale">
+              <h3>Popular Filaments</h3>
+              <div class="multiview-cards">
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product1.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">THE MAKERBOT MINI+</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$1299</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>11.6 X 13.8 X 15.0</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">ROBO R2</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$1499</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>16.7 x 23.7 x 16.6</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product6.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">Cube 3D printer</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$399</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>13.2 x 13.5 x 9.5</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product7.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">FDM 3D printer</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$399</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>13.2 x 13.5 x 9.5</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div><!-- End of the on sale row -->
+
+            <div class="on-sale">
+              <h3>New Products on Sale!</h3>
+              <div class="multiview-cards">
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product4.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">Ultimaker 2+</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$3250</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>8.7 x 8.7 x 8</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product5.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">REPLICATOR Z18</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$5499</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>11.8 x 12 x 18</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product6.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">Cube 3D printer</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$399</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>13.2 x 13.5 x 9.5</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product7.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">FDM 3D printer</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$399</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>13.2 x 13.5 x 9.5</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+            <!-- //End of the on sale row// -->
+
+            <div class="on-sale">
+              <h3>Popular Filaments</h3>
+              <div class="multiview-cards">
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">ROBO R2</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$1499</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>16.7 x 23.7 x 16.6</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product2.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">Formlabs Form II</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$3150</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>5.7 × 5.7 × 6.9</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product3.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">3D Printer Generic</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$1099</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>7.6 x 5.6 x 9.8</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="single-product">
+                  <div class="bookmark">
+                    <a href="checkout.html">
+                      <div class="bookmark-icon">
+                        <img src="img/cart-black.png" alt="bookmark">
+                      </div>
+                    </a>
+                  </div>
+                  <a href="productDetails.html">
+                    <div class="product-card">
+                      <div class="image">
+                        <img src="img/product4.png" alt="product-image">
+                      </div>
+                      <div class="details">
+                        <h3 class="name-product">Ultimaker 2+</h3>
+                        <div class="price-and-star">
+                          <h4 class="price">$3250</h4>
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+                        <div class="size-and-assembly">
+                          <h4>8.7 x 8.7 x 8</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div><!-- End of the on sale row -->
+
+        </div><!-- end of the entire page container-->
+      </div>
+    </div>
+
+
+<!-- <div class="footer">
+
+  <div class="layer1">
+    <div class="services">
+      <h2>SERVICES</h2>
+      <ul>
+        <li>Local Printing</li>
+        <li>Consulting</li>
+        <li>Marketing</li>
+      </ul>
+
+    </div>
+    <div class="company">
+      <h2>COMPANY</h2>
+      <ul>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Our Blog</li>
+      </ul>
+
+    </div>
+    <div class="support">
+      <h2>SUPPORT</h2>
+      <ul>
+        <li>Support Page</li>
+        <li>FAQ</li>
+        <li>Terms of Use</li>
+      </ul>
+    </div>
+    <div class="footer-logo">
+      LOGO
+    </div>
+  </div>
+
+  <div class="layer2">
+    <div class="facebook social">
+
+    </div>
+    <div class="youtube social">
+
+    </div>
+    <div class="twitter social">
+
+    </div>
+  </div>
+
+  <div class="layer3">
+    <h4>Copyright 2019 | Simon Fraser University, Surrey | 123-456-7890 | support@company.com</h4>
+  </div>
+
+</div> -->
 
   </body>
 </html>

@@ -1,0 +1,78 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+/*footer*/
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ebebeb;
+  padding: 2em 16em;
+}
+
+.divider-line{
+  width: 100%;
+  height: 4px;
+  /* background-color: black; */
+  margin: 0.3em 0.8em;
+  margin-left: 0;
+  margin-bottom: 3em;
+}
+
+.layer1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.layer1 ul{
+  list-style: none;
+  padding: 0;
+}
+
+.services{
+  margin-right: 5em;
+}
+.company{
+  margin-right: 5em;
+}
+
+.support{
+  margin-right: 5em;
+
+}
+
+.footer-logo{
+  font-size: 2em;
+  position: relative;
+  right: 0;
+  font-weight: 900;
+  text-align: center;
+  padding: 1.5em 4em;
+  /* width: 20em; */
+  background-color: #5722ff;
+
+}
+
+.layer2{
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.social{
+  width: 3.125em;
+  height: 3.125em;
+  background-color: black;
+  margin: 0.3em 0.8em;
+  margin-left: 0;
+}
+
+.layer3{
+  margin: 2em 0;
+}
+
+
+/*footer end*/

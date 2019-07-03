@@ -1,0 +1,269 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+  text-decoration: none;
+}
+ul{
+  padding: 0;
+  list-style: none;
+
+}
+
+.breadcrumbs{
+  margin: 0;
+  margin-left: 0.9em;
+}
+.overall-checkout{
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+}
+.checkout{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.order{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  max-height: 30em;
+  border: 0.06em solid black;
+  padding: 0.6em;
+  padding-top: 1.4em;
+
+}
+
+.items{
+  width: 100%;
+}
+
+.left-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* height:75em; */
+  /* border: solid black 2px; */
+}
+
+.checkout-details{
+  width: 100%;
+  height: 50%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+.product-name{
+  margin: 0;
+}
+
+.checkout-image{
+  margin: 1em;
+  /* background-color: #e05151; */
+}
+
+.checkout-image img{
+  max-width:25em;
+}
+
+.checkout-info{
+  width: 50%;
+  margin: 1em;
+  margin-left: 0;
+  /* height: 210px; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+}
+
+.qty-price-tprice-cont{
+  margin-top: 1.6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.qty-price-tprice-cont h4{
+  font-weight: 500;
+}
+.qty-cont{
+  display: flex;
+  flex-direction: column;
+}
+.qty-input{
+  width: 4em;
+  height: 2em;
+  border: 1px solid  #a9a9a9;
+  border-radius: 3px;
+}
+
+input[type=number]{
+  padding-left: 0.5em;
+}
+
+.top-margin{
+  margin-top: 0.3em;
+}
+.price-cont{
+  display: flex;
+  flex-direction: column;
+}
+
+.tprice-cont{
+  display: flex;
+  flex-direction: column;
+}
+.tprice-price-cont{
+  display: flex;
+  flex-direction: row;
+}
+.strikethrough{
+  text-decoration: line-through;
+  margin-right: 0.5em;
+}
+.remove-wishlist{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-top: 1em;
+}
+.remove-wishlist h4{
+  font-weight: 500;
+  color: black;
+
+}
+.remove-wishlist h4:hover, .remove-wishlist h4:focus{
+  color: #f3784d;
+  text-decoration-color: #f3784d;
+}
+.remove{
+  margin-right: 0.8em;
+}
+
+h3, h4{
+  margin: 0;
+}
+
+.baseline-div{
+  margin-bottom: 2em;
+}
+
+/* similar products----------------------------------------------------------------- */
+.similar-products{
+  width: 100%;
+  /* height: 50%; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* similar products----------------------------------------------------------------- */
+
+/* divide---------------------------------------------------------------------- */
+/* /.divider{
+  width: 0.05em;
+  background-color: black;
+  margin-left: 1em;
+} */
+
+/* divide---------------------------------------------------------------------- */
+
+/* right content  _________________-------------------------____________________*/
+
+
+
+.right-content{
+  display: flex;
+  /* margin-left: 1em; */
+  flex-direction: row;
+}
+
+.order-summary-details{
+  width: 100%;
+  margin: 0;
+  margin-top: 1.5em;
+  /* height: 60%; */
+  /* background-color: #3afcff; */
+  padding: 0 1em;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.margin{
+  margin: 0;
+  margin-left: 0.6em;
+}
+/* .margin h2{
+  margin-left: 1.5em;
+} */
+.summary-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.3em 0;
+}
+
+.shipping-radio{
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+
+.radio-class{
+  display: flex;
+  flex-direction: row;
+}
+
+.radio-class h4{
+  padding-left: 0.4em;
+}
+/* .ship-copy{
+  margin: 0;
+  margin-left: 1.3em;
+} */
+.ship-copy p{
+  font-weight: 500;
+  margin: 0;
+  margin-left: 1.3em;
+}
+
+.checkout-button{
+  /* width: 10em; */
+  color: #fff;
+  background-color: #f3784d;
+  transition-duration: 0.4s;
+  text-align: center;
+  padding: 1em 1em;
+  margin: 1em;
+  border-radius: 2px;
+}
+
+
+.button-submits:hover, .button-submits:focus{
+  background-color: #fff;
+  color: #f3784d;
+  border-color: #f3784d;
+  /* border-width: 0.2em; */
+  border-style: solid;
+}
+
+.button-submits:active{
+  animation: pulse-orange 0.2s 1 ease-out;
+}
+
+@keyframes pulse-orange {
+  from {
+    box-shadow:  0 0 0 0 rgba(255, 255, 255, 1), /*white*/
+                 0 0 0 0 rgba(243,120,77, 1); /*orange border*/
+  }
+  to {
+    box-shadow:  0 0 0 0.65em rgba(255, 255, 255, 0.5),
+                 0 0 0 1em rgba(243,120,77, 0);
+  }
+}
