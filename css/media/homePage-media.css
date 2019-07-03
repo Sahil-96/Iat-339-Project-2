@@ -1,0 +1,38 @@
+@media (max-width:1230px) {
+  .banner-cards-container{
+    display: none;
+  }
+}
+@media (max-width:425px) {
+
+  .banner-image{
+    margin-top: 2em;
+  }
+  .bottom-area{
+    margin: 1em;
+  }
+  .multiview-cards{
+  	display: flex;
+    flex-wrap: wrap;
+  }
+  .wishlist{
+    margin: 1em 0;
+  }
+  .wishlist-left img{
+    width: 7em;
+    /* width: 7em; */
+  }
+  .wishlist-right h3{
+    margin: 0;
+  }
+  .wishlist-right h4{
+    margin: 0;
+  }
+  .wishlist-right{
+    justify-content: space-between;
+  }
+  .spacer{
+    height: 0;
+    width: 100%;
+  }
+}
