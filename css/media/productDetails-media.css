@@ -1,0 +1,116 @@
+@media (max-width: 426px) {
+
+  .product-details{
+    padding: 0;
+    margin-top: 7em;
+  }
+
+  .product-detail-heading{
+    padding:  0 1em;
+  }
+  .spec-list{
+    padding: 0 1em;
+
+  }
+
+  .similar-products{
+    padding: 0 1em;
+
+
+  }
+  .reviews{
+    padding: 0 1em;
+
+
+  }
+  .images-set{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main-image img{
+    width: 100%;
+  }
+
+  .images-set{
+    margin-bottom: 2em;
+  }
+  .product-detail-heading{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* padding-left: 0; */
+    justify-content: space-between;
+  }
+
+
+  .images-and-details{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .single-detail{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-and-details{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-tile{
+    font-weight: normal;
+    padding-right: 2em;
+    /* max-width: 7em; */
+  }
+
+
+  .product-list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name-star-submit-button{
+    flex-direction: column;
+  }
+
+  textarea[name=input]{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .review-button{
+    width: 7em;
+    justify-content: center;
+    padding: 1.5em 1.5em;
+  }
+
+  .review-button h3{
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+
+  .name{
+    margin-right: 2em;
+  }
+
+  .single-review{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-copy{
+    width: 100%;
+    margin-left: 0;
+    /* border: solid black 1px; */
+
+  }
+
+  .spec-title{
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
