@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/productDetails.css">
-    <!-- <link rel="stylesheet" href="css/productMultiview.css"> -->
+    <link rel="stylesheet" href="css/media/productDetails-media.css">
     <link rel="stylesheet" href="css/headerNav.css">
+    <link rel="stylesheet" href="css/productCard.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src='http://code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script src='javascript/jquery.reel.js' type='text/javascript'></script>
 
   </head>
   <body>
@@ -20,7 +24,6 @@
 
         <div class="searchbar-nav">
           <form>
-            <!-- Inputs -->
             <input id="search" placeholder="Search for a product" type="text">
           </form>
         </div>
@@ -36,14 +39,26 @@
 
     </nav>
 
+
     <div class="product-details page-content-container">
       <div class="images-and-details">
+
         <div class="images-set">
           <!-- This is where all the images go.... -->
           <div class="main-image">
-            <img src="img/product1.jpg" alt="image-of-a-3d-printer">
+            <img src="img/product1.jpg"
+              class="reel"
+              id="image"
+              data-images="img/model/D-##.jpg|1..72|1"
+              data-cw="false"
+              data-frame="32"
+              data-speed="0.2"
+              data-duration="1"
+              data-velocity="3"
+              data-brake="0.3">
+            <!-- <img src="img/product1.jpg" alt="image-of-a-3d-printer"> -->
           </div>
-          <div class="image-caro">
+          <!-- <div class="image-caro">
             <div class="image1">
               <img src="img/product1.jpg" alt="image-of-a-3d-printer">
             </div>
@@ -65,7 +80,7 @@
             <div class="image1 last">
 
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="product-detail-heading">
@@ -95,274 +110,440 @@
               <h3>Add to cart</h3>
             </div>
 
-            <div class="add-to-carts button-submits right">
-              <h3>Add to wishlist</h3>
-            </div>
+              <a href="#review" class="add-to-carts button-submits right">
+                <h3>Add a review</h3>
+              </a>
           </div>
 
         </div>
-      </div>
+        </div>
 
+        <div class="spec-list">
 
-      <div class="overview">
-          <h2>Overview</h2>
-      </div>
+          <h1>Details and specs</h1>
 
-      <div class="spec-list">
-
-          <h2>Details and specs</h2>
           <div class="spec-list-copy">
 
-            <div class="single-spec printing">
+            <div class="single-spec">
+              <div class="single-spec-and-line">
+                <!-- <div class="divide">
+                </div> -->
+                <div class="title-and-details">
+                  <h2 class="main-tile">PRINTING</h2>
+
+                  <div class="spec-details">
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Print Technology</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>Fused Deposition Modeling</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Build Volume</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>10.1 L X 12.6 W X 12.6 H CM [4 L X 5 W X 5 H IN] 1,603 Cubic Centimeters [98 Cubic Inches]</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Layer Resolution</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>100 microns [0.0039 in]</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Filament Diameter</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>1.75 mm [0.069 in]</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Filament Compatibility</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>MakerBot PLA Filament - Small Spool Additional materials such as bronzefill, copperfill, and woodfill</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Extruder Compatibility</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>Smart Extruder + Experimental Extruder</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Nozzle Diameter</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>0.4 MM [0.015 IN]</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Print File Type</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>.MAKERBOT</h3>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-spec">
               <div class="single-spec-and-line">
                 <div class="divide">
                 </div>
                 <div class="title-and-details">
-                  <div class="spec-title">
-                    <h3>PRINTING</h3>
-                  </div>
+                  <h2 class="main-tile">SIZE & WEIGHT</h2>
+
                   <div class="spec-details">
-                    <table>
-                      <tr>
-                        <th>Print Technology</th>
-                        <td>Fused Deposition Modeling</td>
-                      </tr>
-                      <tr>
-                        <th>Build Volume</th>
-                        <td>10.1 L X 12.6 W X 12.6 H CM
-                            [4 L X 5 W X 5 H IN]
-                            1,603 Cubic Centimeters
-                            [98 Cubic Inches]
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Layer Resolution</th>
-                        <td>100 microns [0.0039 in]</td>
-                      </tr>
-                      <tr>
-                        <th>Filament Diameter</th>
-                        <td>1.75 mm [0.069 in]</td>
-                      </tr>
-                      <tr>
-                        <th>Filament Compatibility</th>
-                        <td>MakerBot PLA Filament - Small Spool Additional materials such as bronzefill, copperfill, and woodfill</td>
-                      </tr>
-                      <tr>
-                        <th>Extruder Compatibility</th>
-                        <td>0.4 MM [0.015 IN]</td>
-                      </tr>
-                      <tr>
-                        <th>Print File Type</th>
-                        <td>.MAKERBOT</td>
-                      </tr>
-                    </table>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Product Dimensions</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>29.5 L X 34.9 W X 38.1 H CM [11.6 L X 13.8 W X 15.0 H IN]</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Shipping Box</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>40 L X 45.4 W X 52.2 H CM [15.75 L X 17.9 W X 20.6 H IN]</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Product Weight</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>9.3 KG [20.5 LBS]</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Shipping Weight</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>(Includes Accessory Kit) 12.13 KG [26.75 LBS]</h3>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
-
               </div>
             </div>
 
-            <div class="single-spec temp">
+            <div class="single-spec">
               <div class="single-spec-and-line">
                 <div class="divide">
                 </div>
                 <div class="title-and-details">
-                  <div class="spec-title">
-                    <h3>TEMPERATURE</h3>
-                  </div>
+                  <h2 class="main-tile">MECHANICAL</h2>
+
                   <div class="spec-details">
-                    <table>
-                      <tr>
-                        <th>Ambient Operating Temperature</th>
-                        <td>15­-26°C [60­-78°F]</td>
-                      </tr>
-                      <tr>
-                        <th>Storage Temperature</th>
-                        <td>0­-38°C [32-­100°F]
-                        </td>
-                      </tr>
-                    </table>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Construction</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>PC ABS with Powder-Coated Steel Reinforcement</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Build Surface</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>Grip Surface</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Build Plate Leveling</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>Factory Leveled</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Filament Diameter</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>1.75 mm [0.069 in]</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Stepper Motors</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>1.8° step angle with 1/16 micro-stepping</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>XY Positioning Precision</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>11 Microns [0.0004 IN]</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Z Positioning Precision</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>2.5 Microns [0.0001 IN]</h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
               </div>
             </div>
 
-            <div class="single-spec weight">
+            <div class="single-spec">
               <div class="single-spec-and-line">
                 <div class="divide">
                 </div>
                 <div class="title-and-details">
-                  <div class="spec-title">
-                    <h3>SIZE & WEIGHT</h3>
-                  </div>
+                  <h2 class="main-tile">SOFTWARE</h2>
+
                   <div class="spec-details">
-                    <table>
-                      <tr>
-                        <th>Product Dimensions</th>
-                        <td>29.5 L X 34.9 W X 38.1 H CM  [11.6 L X 13.8 W X 15.0 H IN]</td>
-                      </tr>
-                      <tr>
-                        <th>Shipping Box</th>
-                        <td>40 L X 45.4 W X 52.2 H CM  [15.75 L X 17.9 W X 20.6 H IN]
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Product Weight</th>
-                        <td>9.3 KG [20.5 LBS]
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Shipping Weight</th>
-                        <td>(Includes Accessory Kit) 12.13 KG [26.75 LBS]
-                        </td>
-                      </tr>
-                    </table>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Software Bundle</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>MakerBot Print, MakerBot Mobile</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Supported File Types</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>STL, OBJ</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Operating Systems</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>Windows (7, 10) <br>
+                            Mac OS X (10.9+)
+                        </h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
               </div>
-
             </div>
 
-            <div class="single-spec mechanical">
+            <div class="single-spec">
               <div class="single-spec-and-line">
                 <div class="divide">
                 </div>
                 <div class="title-and-details">
-                  <div class="spec-title">
-                    <h3>MECHANICAL</h3>
-                  </div>
+                  <h2 class="main-tile">ELECTRICAL</h2>
+
                   <div class="spec-details">
-                    <table>
-                      <tr>
-                        <th>Construction</th>
-                        <td>PC ABS with Powder-Coated Steel Reinforcement</td>
-                      </tr>
-                      <tr>
-                        <th>Build Surface</th>
-                        <td>Grip Surface
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Build Plate Leveling</th>
-                        <td>Factory Leveled</td>
-                      </tr>
-                      <tr>
-                        <th>Stepper Motors</th>
-                        <td>1.8° step angle with 1/16 micro-stepping</td>
-                      </tr>
-                      <tr>
-                        <th>XY Positioning Precision</th>
-                        <td>11 Microns [0.0004 IN]</td>
-                      </tr>
-                      <tr>
-                        <th>Z Positioning Precision</th>
-                        <td>2.5 Microns [0.0001 IN]</td>
-                      </tr>
-                      <tr>
-                        <th>Print File Type</th>
-                        <td>.MAKERBOT</td>
-                      </tr>
-                    </table>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Power Requirements</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>100-­240 V; 0.76-0.43 A50-60 HZ</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Connectivity</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>WI-FI, USB</h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
               </div>
-
             </div>
 
-            <div class="single-spec software">
+            <div class="single-spec">
               <div class="single-spec-and-line">
                 <div class="divide">
                 </div>
                 <div class="title-and-details">
-                  <div class="spec-title">
-                    <h3>SOFTWARE</h3>
-                  </div>
+                  <h2 class="main-tile">CAMERA</h2>
+
                   <div class="spec-details">
-                    <table>
-                      <tr>
-                        <th>Software Bundle</th>
-                        <td>MakerBot Print, MakerBot Mobile</td>
-                      </tr>
-                      <tr>
-                        <th>Supported File Types</th>
-                        <td>STL, OBJ
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Operating Systems</th>
-                        <td>Windows (7, 10) Mac OS X (10.9+)</td>
-                      </tr>
-                    </table>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Camera resolution</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>640 x 480</h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
               </div>
-
             </div>
 
-            <div class="single-spec electrical">
+            <div class="single-spec">
               <div class="single-spec-and-line">
                 <div class="divide">
                 </div>
                 <div class="title-and-details">
-                  <div class="spec-title">
-                    <h3>ELECTRICAL</h3>
-                  </div>
+                  <h2 class="main-tile">TEMPERATURE</h2>
+
                   <div class="spec-details">
-                    <table>
-                      <tr>
-                        <th>Power Requirements</th>
-                        <td>100-­240 V; 0.76-0.43 A 50-60 HZ</td>
-                      </tr>
-                      <tr>
-                        <th>Connectivity</th>
-                        <td>WI-FI, USB
-                        </td>
-                      </tr>
-                    </table>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Ambient Operating Temperature</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>15­-26°C [60­-78°F]</h3>
+                      </div>
+                    </div>
+
+                    <div class="single-detail">
+                      <div class="spec-title">
+                        <h3>Storage Temperature</h3>
+                      </div>
+                      <div class="not-bold">
+                        <h3>0­-38°C [32-­100°F]</h3>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
-
-              </div>
-
-            </div>
-
-            <div class="single-spec camera">
-              <div class="single-spec-and-line">
-                <div class="divide">
+                <div class="divide spacer">
                 </div>
-                <div class="title-and-details">
-                  <div class="spec-title">
-                    <h3>CAMERA</h3>
-                  </div>
-                  <div class="spec-details">
-                    <table>
-                      <tr>
-                        <th>Camera resolution</th>
-                        <td>640 x 480</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-
               </div>
             </div>
+
           </div>
+        </div>
 
-      </div>
+        <div class="similar-products">
+            <h2>Similar Products</h2>
 
-      <div class="similar-products">
-          <h2>Similar Products</h2>
-          <ul class="product-list">
-            <li>
-                <div class="single-product">
+            <div class="main-product">
+
+              <div class="single-product">
                 <div class="bookmark">
                   <a href="checkout.html">
                     <div class="bookmark-icon">
-                      <img src="img/bookmark_no_fill.png" alt="bookmark">
+                      <img src="img/cart-black.png" alt="bookmark">
+                    </div>
+                  </a>
+                </div>
+                <a href="productDetails.html">
+                  <div class="product-card">
+                    <div class="image">
+                      <img src="img/product1.png" alt="product-image">
+                    </div>
+                    <div class="details">
+                      <h3 class="name-product">THE MAKERBOT MINI+</h3>
+                      <div class="price-and-star">
+                        <h4 class="price">$1299</h4>
+                        <div class="stars">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                      <div class="size-and-assembly">
+                        <h4>11.6 X 13.8 X 15.0</h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="single-product">
+                <div class="bookmark">
+                  <a href="checkout.html">
+                    <div class="bookmark-icon">
+                      <img src="img/cart-black.png" alt="bookmark">
+                    </div>
+                  </a>
+                </div>
+                <a href="productDetails.html">
+                  <div class="product-card">
+                    <div class="image">
+                      <img src="img/product.png" alt="product-image">
+                    </div>
+                    <div class="details">
+                      <h3 class="name-product">ROBO R2</h3>
+                      <div class="price-and-star">
+                        <h4 class="price">$1499</h4>
+                        <div class="stars">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                      <div class="size-and-assembly">
+                        <h4>16.7 x 23.7 x 16.6</h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="single-product">
+                <div class="bookmark">
+                  <a href="checkout.html">
+                    <div class="bookmark-icon">
+                      <img src="img/cart-black.png" alt="bookmark">
                     </div>
                   </a>
                 </div>
@@ -390,14 +571,12 @@
                   </div>
                 </a>
               </div>
-            </li>
 
-            <li>
-                <div class="single-product">
+              <div class="single-product">
                 <div class="bookmark">
                   <a href="checkout.html">
                     <div class="bookmark-icon">
-                      <img src="img/bookmark_no_fill.png" alt="bookmark">
+                      <img src="img/cart-black.png" alt="bookmark">
                     </div>
                   </a>
                 </div>
@@ -425,14 +604,12 @@
                   </div>
                 </a>
               </div>
-            </li>
 
-            <li>
-                <div class="single-product">
+              <div class="single-product">
                 <div class="bookmark">
                   <a href="checkout.html">
                     <div class="bookmark-icon">
-                      <img src="img/bookmark_no_fill.png" alt="bookmark">
+                      <img src="img/cart-black.png" alt="bookmark">
                     </div>
                   </a>
                 </div>
@@ -460,133 +637,65 @@
                   </div>
                 </a>
               </div>
-            </li>
 
+            </div>
 
-            <li>
-                <div class="single-product">
-                <div class="bookmark">
-                  <a href="checkout.html">
-                    <div class="bookmark-icon">
-                      <img src="img/bookmark_no_fill.png" alt="bookmark">
+        </div>
+
+        <!-- <div class="reviews">
+          <h2>Reviews</h2>
+          <div class="single-review-col">
+            <h3>Give us your feedback on this product!!</h3>
+
+            <div class="user-single-review">
+              <div class="lefty">
+                <div class="profile row-style">
+                  <img src="img/images.jpg" alt="profile-image">
+                  <div class="name-star">
+                    <div class="name">
+                      <h4>Samyak Sah</h4>
                     </div>
-                  </a>
-                </div>
-                <a href="productDetails.html">
-                  <div class="product-card">
-                    <div class="image">
-                      <img src="img/product5.png" alt="product-image">
-                    </div>
-                    <div class="details">
-                      <h3 class="name-product">THE MAKERBOT REPLICATOR Z18</h3>
-                      <div class="price-and-star">
-                        <h4 class="price">$5499</h4>
-                        <div class="stars">
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star"></span>
-                        </div>
-                      </div>
-                      <div class="size-and-assembly">
-                        <h4>11.8 x 12 x 18</h4>
-                      </div>
+                    <div class="star">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
                     </div>
                   </div>
-                </a>
-              </div>
-            </li>
-        </ul>
-      </div>
+                </div>
 
-      <div class="reviews">
-        <h2>Reviews</h2>
-        <div class="single-review">
-          <div class="lefty">
-            <div class="profile">
-              <img src="img/profile.jpg" alt="profile-image">
-            </div>
-          </div>
-          <div class="righty">
-            <div class="name-star">
-              <div class="name">
-                <h4>NameFirst Name</h4>
+                <div class="review-button button-submits">
+                  <h3>Submit</h3>
+                </div>
+
+                </div>
               </div>
-              <div class="star">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+              <div class="righty">
+
+                <div class="text-field">
+                  <form method="post" action="#">
+                    <label for="input">
+                        <textarea name="input" placeholder="Write something here" type="text"></textarea>
+                    </label>
+                  </form>
+                </div>
               </div>
+
+
             </div>
-            <div class="review-copy">
-              <h4>Extremly expensive but worth it!</h4>
-              <p>What you need, above all else, is a love for your subject, whatever it is. You've got to be so deeply in love with your subject that when curve balls are thrown, when hurdles are put in place, you've got the energy to overcome them. I can't tell you how many people say they were turned off from science because of a science teacher that completely sucked out all the inspiration and enthusiasm they had for the course.</p>
+            <div class="line-section">
+
             </div>
+
           </div>
 
-        </div>
-        <div class="single-review">
-          <div class="lefty">
-            <div class="profile">
-              <img src="img/profile.jpg" alt="profile-image">
-            </div>
-          </div>
-          <div class="righty">
-            <div class="name-star">
-              <div class="name">
-                <h4>NameFirst Name</h4>
-              </div>
-              <div class="star">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-            </div>
-            <div class="review-copy">
-              <h4>Extremly expensive but worth it!</h4>
-              <p>What you need, above all else, is a love for your subject, whatever it is. You've got to be so deeply in love with your subject that when curve balls are thrown, when hurdles are put in place, you've got the energy to overcome them. I can't tell you how many people say they were turned off from science because of a science teacher that completely sucked out all the inspiration and enthusiasm they had for the course.</p>
-            </div>
-          </div>
-
-        </div>
-        <div class="single-review">
-          <div class="lefty">
-            <div class="profile">
-              <img src="img/profile.jpg" alt="profile-image">
-            </div>
-          </div>
-          <div class="righty">
-            <div class="name-star">
-              <div class="name">
-                <h4>NameFirst Name</h4>
-              </div>
-              <div class="star">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-            </div>
-            <div class="review-copy">
-              <h4>Extremly expensive but worth it!</h4>
-              <p>What you need, above all else, is a love for your subject, whatever it is. You've got to be so deeply in love with your subject that when curve balls are thrown, when hurdles are put in place, you've got the energy to overcome them. I can't tell you how many people say they were turned off from science because of a science teacher that completely sucked out all the inspiration and enthusiasm they had for the course.</p>
-            </div>
-          </div>
-
-        </div>
-
-        </div>
+          </div> -->
 
     </div>
 
 
-    <div class="footer">
+    <!-- <div class="footer">
 
       <div class="layer1">
         <div class="services">
@@ -636,7 +745,7 @@
         <h4>Copyright 2019 | Simon Fraser University, Surrey | 123-456-7890 | support@company.com</h4>
       </div>
 
-    </div>
+    </div> -->
 
 
 

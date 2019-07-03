@@ -27,7 +27,16 @@
 
 }
 
-
+.question-and-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dropdown-button{
+  width: 2em;
+  height: 2em;
+  background-color: blue;
+}
 .g{
   background-color: #ff784e;
 }

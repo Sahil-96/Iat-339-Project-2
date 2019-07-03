@@ -5,18 +5,31 @@
 
 .homepage{
   margin-bottom: 4em;
+  margin-top: 4em;
 }
-.banner{
+/* .banner{
   width: 100%;
-  height: 87vh;
+  height: 40em;
   background-color: #1e6a99;
-  /*position: relative;*/
+  position: relative;
   margin-top: 6em;
   display: flex;
   flex-direction: row;
-  /*bottom: 0;*/
+  bottom: 0;
   align-items: flex-end;
-  /* padding: 0 16em; */
+  padding: 0 16em;
+} */
+
+.banner{
+  position: relative;
+  height: 100%;
+  justify-content: center;
+  /* margin-top: 50em; */
+}
+.banner-image{
+
+  width: 100%;
+  height: auto;
 }
 
 .banner-cards-container{
@@ -26,16 +39,26 @@
   right: 16em;*/
   /*position: relative;*/
 
-  height: 50%;
-  width: 100%;
+  /* height: 50%; */
+  /* max-width: 100%; */
+  position: absolute;
+  bottom: 0;
+  margin-top: 3em;
   /* background-color: red; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* margin-bottom: 5.2em; */
+}
+.bottom-area{
+  margin-top: 2em;
 }
 
+
 .ad-card{
-  min-width: 422.4px;
+  /* min-width: 422.4px; */
+  max-width: 26.400em;
+  height: 24em;
   background-color: white;
   margin: 1em;
   align-items: center;
@@ -93,48 +116,21 @@
   text-decoration: none;
 }
 
-.temp-img1{
-	/* width: 6em;
-	height: 4em; */
-	/* background-color: grey; */
-}
-
-.temp-img2{
-	/* width: 6em;
-	height: 4em; */
-	/* background-color: lightgrey; */
-}
 
 .item img{
-  width: 5.6em;
+  max-width: 5.6em;
+  height: auto;
 }
 
 .item h4{
   text-align: center;
-  font-size: 16px;
+  font-size: 1em;
 	margin: 0;
   font-weight: normal;
   margin-top: 0.6em;
   padding: 0 0.9em;
 }
 
-.on-sale{
-	width: 100%;
-}
-
-.multiview-cards{
-	display: flex;
-	flex-direction: row;
-	background-color: grey;
-	width: 100%;
-	height: 14em;
-}
-
-.section-tab-master{
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-}
 
 
 
@@ -150,8 +146,8 @@
 .event-row{
   width: 100%;
   height: 50%;
-  background-color: #cb4df3;
-  border: 1px solid black;
+  /* background-color: #cb4df3; */
+  /* border: 1px solid black; */
   margin-bottom: 1em;
   display: flex;
   flex-direction: row;
@@ -161,17 +157,17 @@
 }
 .date-and-month{
   width: 30%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: center;
   padding: 2em 0;
 
 }
 .date-and-month h4{
-  font-size: 30px;
+  font-size: 1.875em;
 }
 .event-main-details{
   width: 70%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   padding: 1em 0;
@@ -184,14 +180,20 @@
 }
 
 .event-title h4{
-  font-size: 25px;
+  font-size: 1.563em;
 }
 
 .time-and-genre h4{
   font-weight: 500;
-  font-size: 22px;
+  font-size: 1.375em;
 }
 
+.vertical-line{
+  height: 100%;
+  width: 3px;
+  background-color: black;
+  margin-right: 1em;
+}
 
 /* Upcoming events--------------------------------------------------------------- */
 
@@ -199,84 +201,82 @@
 
 .wishlist{
   margin: 1em;
-  height: 70%;
-  background-color: red;
+  /* height: 70%; */
+  /* background-color: red; */
   display: flex;
   flex-direction: row;
 }
 
 .wishlist-left{
   width: 50%;
+  margin-left: 2em;
 }
 
 .wishlist-left img{
-  width: 200px;
+  width: 12.500em;
+  /* width: 7em; */
 }
 
 .wishlist-right{
   display: flex;
   flex-direction: column;
+  margin-left: 0.5em;
 }
-
+.wishlist-right h3{
+  margin-bottom: 0;
+}
 .old-new-price{
     display: flex;
     flex-direction: row;
+    color: red;
 }
 
 .old{
   text-decoration: line-through;
+  margin-right: 0.5em;
+  color: black;
+  font-weight: 400;
+}
+
+.spacer{
+  height: 2em;
+  width: 100%;
+}
+.link{
+  color: black;
+  padding: 0.5em;
+  border-radius: 0.4em;
+}
+.link:hover , .linkfocus{
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.size{
+  font-weight: 500;
 }
 /* wishlist----------------------------------------------------------------------- */
 
+/* bottom page----------------------------------------------------------------------- */
 
-/*.banner-image-container{
-	display: flex;
-	margin-top: 6em; *//*this is to offset due to Nav Bar*/
-/*	width: 100%;
-	height: 100vh;
-	background-color: #e1e1e1;
+.on-sale{
+	width: 100%;
 }
 
-.personal-ad-cards-container{
+.multiview-cards{
 	display: flex;
 	flex-direction: row;
+	/* background-color: grey; */
 	width: 100%;
-	height: 50%;
-	position: relative;
-	bottom: 0;
-	background-color: red;
+	/* height: 14em; */
+  justify-content: space-between;
 }
 
-
-.personal-ad-card{
-	background-color: white;
-	width: 31%;
-	height: 100%;
-	margin: 1em;
-}
-
-
-.personal-ad-card-inner-content{
-	width: 100%
-	margin: 1.563;
-}
-
-.filament-boxs-container{
+.section-tab-master{
+	display: flex;
 	flex-direction: column;
-	position: relative;
-	bottom: 0;
-}
-
-.two-filament-boxes{
-	flex-direction: row;
-}
-
-.individual-filament-box{
-	flex-direction: column;
-	width: 50%;
-}
-
-.filament-img{
 	width: 100%;
-	height: 40%;
-}*/
+}
+
+
+
+/* bottom page----------------------------------------------------------------------- */
