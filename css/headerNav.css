@@ -314,6 +314,15 @@ form{
     margin-right: 1.5em;
   }
 }
-@media (max-width:26.563em) {
-/*comment just to force a push*/
+@media (max-width: 26.563em) {
+  .menu-nav{
+    flex-direction: column;
+    width: 100%;
+    /*display: block;*/
+  }
+
+  .button-nav{
+    width: 100%;
+    /*display: block;*/
+  }
 }
