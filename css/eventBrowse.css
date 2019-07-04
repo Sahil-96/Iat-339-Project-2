@@ -20,7 +20,8 @@
 }
 .product-heading{
 /*  margin-left: 16em;*/
-    margin-top: 100px;
+    margin-top: 5.378em;
+    padding-top: 3em;
 }
 
 .event-card-container{
@@ -224,6 +225,91 @@ ul{
   border-bottom: solid #848484 0.5px;
 }
 
+.filter h1{
+font-size: 1.4em;
+line-height: 2em;
+text-align: baseline;
+}
+
+
+/*.radio{
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  font-size: 14px;
+  margin: 15px;
+}
+.label{
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 2px 
+    border-color gray;
+    border-radius: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .label:after{
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background: white;
+      transform: scale(0);
+      transition all: .2s ease;
+      opacity: .08;
+      pointer-events: none;
+    }
+.label:hover, .label:after{
+      transform:scale(3.6);
+    }
+    
+  
+input[type="radio"]:checked .label{
+  border-color: white;
+}
+  .label:after{
+    transform: scale(1);
+    transition: all .2s cubic-bezier(.35,.9,.4,.9);
+    opacity: 1;
+  }
+
+.cntr{
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}*/
+  
+/*dribbble */
+/*.credit{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  transition: all .2s ease;
+  -webkit-user-select: none;
+  user-select: none;
+  opacity: .6;
+  }
+
+.credit img{
+  width: 72px;
+}
+  .credit:hover{
+    transform: scale(.95);
+  
+  }*/
+
 @media (max-width: 77.813em) {
   .page-content-container{
     flex-direction: column;
@@ -272,4 +358,25 @@ ul{
   margin: 0.563em;
   margin-left: 1.875em;
   }
+}
+
+
+/*These are for the nav top space*/
+
+@media (max-width:66em){
+.product-heading{
+  margin-top: 8.748em;
+  padding-top: 1.5em;
+}
+
+@media (max-width:48em){
+.product-heading{
+  margin-top: 11.972em;
+  padding-top: 1em;
+}
+
+@media (max-width:26.563em){
+.product-heading{
+  margin-top: 17.419em;
+  padding-top: 0.75em;
 }

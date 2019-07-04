@@ -1,6 +1,6 @@
 .banner-image{
 	/* flex-grow: 1; */
-	margin-top: 8em; /*this is to offset due to Nav Bar*/
+	margin-top: 5.378em; /*this is to offset due to Nav Bar*/
 	/* width: 100%; */
 	height: 30em;
 	background-color: #e1e1e1;
@@ -94,4 +94,22 @@
 		flex-direction: column;
 		justify-content: space-between;
 	}
+}
+
+@media (max-width:66em){
+.banner-image{
+  margin-top: 8.748em;
+  /*padding-top: 1.5em;*/
+}
+
+@media (max-width:48em){
+.banner-image{
+  margin-top: 11.972em;
+  /*padding-top: 1em;*/
+}
+
+@media (max-width:26.563em){
+.banner-image{
+  margin-top: 17.419em;
+  /*padding-top: 0.75em;*/
 }

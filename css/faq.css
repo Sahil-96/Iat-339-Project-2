@@ -3,7 +3,8 @@
 }
 
 .faq{
-  margin-top: 10em;
+  margin-top: 5.378em;
+  padding-top: 3em;
   display: flex;
   flex-direction: column;
   margin-bottom: 4em;
@@ -59,4 +60,23 @@
     margin: 0;
     padding: 0;
   }
+}
+
+
+@media (max-width:66em){
+.faq{
+  margin-top: 8.748em;
+  padding-top: 1.5em;
+}
+
+@media (max-width:48em){
+.faq{
+  margin-top: 11.972em;
+  padding-top: 1em;
+}
+
+@media (max-width:26.563em){
+.faq{
+  margin-top: 17.419em;
+  padding-top: 0.75em;
 }
