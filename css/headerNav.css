@@ -4,8 +4,9 @@
 /*Nav bar*/
 
 .container-nav {
-  margin-left: auto;
-  margin-right: auto;
+  /*margin-left: auto;
+  margin-right: auto*/;
+  /*width: 100%;*/
   background-color: #fff;
   overflow: hidden;
   display: flex;
@@ -32,6 +33,8 @@
   /*font-size: 18px;*/
   order: 0;
 }
+
+
 
 /*.after-search-container{
   display: flex;
@@ -80,6 +83,13 @@
 .checkout-nav{
   margin-right: 1.5em;
   order: 0;
+}
+
+.cart-icon{
+  color: black;
+}
+.cart-icon:hover, .cart-icon:focus{
+  color: #f3784d;
 }
 
 input[id=search]{
@@ -312,6 +322,7 @@ form{
     padding-top: 0.5em;
     margin-left: 1.5em;
     margin-right: 1.5em;
+    width: 100%;
   }
 }
 @media (max-width: 26.563em) {

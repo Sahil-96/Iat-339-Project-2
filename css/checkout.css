@@ -13,7 +13,8 @@ ul{
   margin-left: 0.9em;
 }
 .overall-checkout{
-  margin-top: 10em;
+  margin-top: 5.378em;
+  padding-top: 3em;
   display: flex;
   flex-direction: column;
 }
@@ -31,7 +32,6 @@ ul{
   border: 1px solid grey;
   padding: 0.6em;
   padding-top: 1.4em;
-
 }
 
 .items{
@@ -265,4 +265,22 @@ h3, h4{
     box-shadow:  0 0 0 0.65em rgba(255, 255, 255, 0.5),
                  0 0 0 1em rgba(243,120,77, 0);
   }
+}
+
+@media (max-width:66em){
+.overall-checkout{
+  margin-top: 8.748em;
+  padding-top: 1.5em;
+}
+
+@media (max-width:48em){
+.overall-checkout{
+  margin-top: 11.972em;
+  padding-top: 1em;
+}
+
+@media (max-width:26.563em){
+.overall-checkout{
+  margin-top: 17.419em;
+  padding-top: 0.75em;
 }

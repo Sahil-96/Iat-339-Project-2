@@ -3,9 +3,9 @@
   text-decoration: none;
 }
 
-.homepage{
+.home-page{
   margin-bottom: 4em;
-  margin-top: 6em;
+  margin-top: 5.378em;
 }
 
 .banner{
@@ -249,3 +249,22 @@
 
 
 /* bottom page----------------------------------------------------------------------- */
+
+
+@media (max-width:66em){
+.home-page{
+  margin-top: 8.748em;
+  /*padding-top: 1.5em;*/
+}
+
+@media (max-width:48em){
+.home-page{
+  margin-top: 11.972em;
+  /*padding-top: 1em;*/
+}
+
+@media (max-width:26.563em){
+.home-page{
+  margin-top: 17.419em;
+  /*padding-top: 0.75em;*/
+}
