@@ -1,49 +1,27 @@
 .banner-image{
-	flex-grow: 1;
+	/* flex-grow: 1; */
 	margin-top: 8em; /*this is to offset due to Nav Bar*/
-	width: 100%;
-	height: 50vh;
+	/* width: 100%; */
+	height: 30em;
 	background-color: #e1e1e1;
+	/* background-image: url("../img/MFBADay3@2x.jpg");
+	background-repeat: no-repeat;
+  background-size: cover; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.banner-text-master-container{
-	/*margin-left: 16em;*/
-	/*margin-right: 16em;*/
-	padding-left: 3em;
-	padding-right: 3em;
- 	max-width: 88em;
- 	/* display: block; */
-
-
- 	margin-left: auto;
- 	margin-right: auto;
-	/*max-width: 53em;*/
-	/*height: 50%;*/
-	position: relative;
-	align-items: center;
-
-	/*top: 25%;*/
-	/*align-content: center;*/
-	/*background-color: red;*/
-}
 
 .banner-text-quote-container{
 	display: flex;
 	flex-direction: row;
+	width: 60%;
+}
+.heading-spacer{
+	width: 40%;
 }
 
-.banner-text-quote{
-	max-width: 44em;
-	flex: 0 1 auto;
-}
-
-.spacer{
-	flex: 1 1 auto;
-	/*width: 44em;*/
-}
 
 .page-content-container{
 	display: block;
@@ -53,16 +31,21 @@
 .half-column-container{
 	/*flex-wrap: wrap;*/
 	/*min-width: 29em;*/
-	display: inline-flex;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .half-column-item{
 	display: block;
-	flex: 0,1,auto;
+	flex: 0 1 auto;
+}
+.half-column-item p{
+	max-width: 35em;
 }
 
-.spacer{
-	padding-right: 9em;
+.para{
+	margin-right: 3em;
 }
 
 .content-image{
@@ -78,4 +61,37 @@
 .inset-text-after-image{
 	margin-left: 8em;
 	margin-right: 8em;
+}
+
+@media (max-width: 1410px) {
+	.inset-text-after-image{
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.page-content-container{
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.banner-text-quote-container{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+	.heading-spacer{
+		width: 0;
+	}
+
+}
+
+@media (max-width: 640px) {
+	.half-column-container{
+		/*flex-wrap: wrap;*/
+		/*min-width: 29em;*/
+		display:flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 }
