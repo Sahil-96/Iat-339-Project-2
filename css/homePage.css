@@ -5,51 +5,27 @@
 
 .homepage{
   margin-bottom: 4em;
-  margin-top: 4em;
-}
-/* .banner{
-  width: 100%;
-  height: 40em;
-  background-color: #1e6a99;
-  position: relative;
   margin-top: 6em;
-  display: flex;
-  flex-direction: row;
-  bottom: 0;
-  align-items: flex-end;
-  padding: 0 16em;
-} */
+}
 
 .banner{
-  position: relative;
-  height: 100%;
-  justify-content: center;
-  /* margin-top: 50em; */
-}
-.banner-image{
-
   width: 100%;
-  height: auto;
+  height: 40em;
+  background: url("../img/anycubic-photon-3d-printer-review-xxl-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
 }
 
 .banner-cards-container{
-  /*position: absolute;
-  top: 20em;
-  left: 16em;
-  right: 16em;*/
-  /*position: relative;*/
-
-  /* height: 50%; */
-  /* max-width: 100%; */
-  position: absolute;
-  bottom: 0;
   margin-top: 3em;
-  /* background-color: red; */
   display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: space-between;
-  /* margin-bottom: 5.2em; */
 }
+
 .bottom-area{
   margin-top: 2em;
 }
@@ -58,7 +34,7 @@
 .ad-card{
   /* min-width: 422.4px; */
   max-width: 26.400em;
-  height: 24em;
+  height: 25em;
   background-color: white;
   margin: 1em;
   align-items: center;
@@ -89,9 +65,8 @@
   padding: 0;
   justify-content: center;
 }
-.refill-card h4{
-  /* text-decoration: none; */
-}
+
+
 .filament-row{
 	display: flex;
 	flex-direction: row;
@@ -125,7 +100,6 @@
 
 .item h4{
   text-align: center;
-  font-size: 1em;
 	margin: 0;
   font-weight: normal;
   margin-top: 0.6em;
@@ -141,59 +115,52 @@
   height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   margin: 1em;
+  margin-top: 0;
 }
 .event-row{
   width: 100%;
-  height: 50%;
   /* background-color: #cb4df3; */
   /* border: 1px solid black; */
-  margin-bottom: 1em;
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
+  align-items: center;
 }
-.event-row h4{
-  margin: 0;
-}
+
 .date-and-month{
-  width: 30%;
   /* border: 1px solid black; */
+  height: 100%;
   text-align: center;
-  padding: 2em 0;
+  align-items: center;
+  padding: 1em;
 
 }
-.date-and-month h4{
-  font-size: 1.875em;
+.date-and-month h2{
+  padding: 0;
 }
+
 .event-main-details{
-  width: 70%;
   /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
-  padding: 1em 0;
-  padding-left: 0.4em;
   justify-content: center;
+  padding: 1em;
 
 }
-.time-and-genre{
-  margin-top: 0.5em;
+
+.event-title h2{
+  padding: 0;
 }
 
-.event-title h4{
-  font-size: 1.563em;
-}
-
-.time-and-genre h4{
-  font-weight: 500;
-  font-size: 1.375em;
+.time-and-genre h3{
+  margin: 0;
 }
 
 .vertical-line{
-  height: 100%;
+  height: 90%;
   width: 3px;
   background-color: black;
-  margin-right: 1em;
 }
 
 /* Upcoming events--------------------------------------------------------------- */
@@ -202,59 +169,60 @@
 
 .wishlist{
   margin: 1em;
-  /* height: 70%; */
-  /* background-color: red; */
+  margin-top: 0;
   display: flex;
   flex-direction: row;
+  /* width: 100%; */
+  justify-content: space-around;
+  padding: 0 2em;
 }
 
 .wishlist-left{
-  width: 50%;
-  margin-left: 2em;
+  width: 9em;
 }
 
 .wishlist-left img{
-  width: 12.500em;
+  /* width: 12.500em; */
+  width: 100%;
   /* width: 7em; */
 }
 
 .wishlist-right{
   display: flex;
   flex-direction: column;
-  margin-left: 0.5em;
+  justify-content: space-around;
+  padding-left: 1em;
+  line-height: 1.4em;
 }
-.wishlist-right h3{
-  margin-bottom: 0;
+.wishlist-right h2{
+  margin: 0;
+  padding: 0;
 }
 .old-new-price{
-    display: flex;
-    flex-direction: row;
-    color: red;
+  display: flex;
+  flex-direction: row;
+  color: red;
 }
-
-.old{
+.old-new-price h4{
+  margin: 0 0.6em;
+  margin-left: 0;
+}
+.size{
+  margin: 0;
+}
+.old-price{
   text-decoration: line-through;
-  margin-right: 0.5em;
   color: black;
-  font-weight: 400;
 }
 
-.spacer{
-  height: 2em;
-  width: 100%;
-}
 .link{
   color: black;
-  padding: 0.5em;
   border-radius: 0.4em;
 }
 .link:hover , .linkfocus{
-
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.size{
-  font-weight: 500;
-}
+
 /* wishlist----------------------------------------------------------------------- */
 
 /* bottom page----------------------------------------------------------------------- */

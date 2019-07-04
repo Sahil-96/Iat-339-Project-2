@@ -1,5 +1,15 @@
-@media (max-width:1230px) {
+@media (max-width:1412px) {
+  .page-content-container{
+    padding: 0;
+  }
+  .sale-heading{
+    margin-left: 1em;
+  }
+}
+
+@media (max-width:1270px) {
   .banner-cards-container{
+    /* flex-direction: column; */
     display: none;
   }
 }

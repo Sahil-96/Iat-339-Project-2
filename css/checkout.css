@@ -27,8 +27,8 @@ ul{
   display: flex;
   flex-direction: column;
   margin-left: 1em;
-  max-height: 30em;
-  border: 0.06em solid black;
+  max-height: 32em;
+  border: 1px solid grey;
   padding: 0.6em;
   padding-top: 1.4em;
 
@@ -46,6 +46,15 @@ ul{
   /* border: solid black 2px; */
 }
 
+.checkout-container{
+  display: flex;
+  flex-direction: column;
+}
+.checkout-divider{
+  height: 1px;
+  width: 100%;
+  background-color: grey;
+}
 .checkout-details{
   width: 100%;
   height: 50%;
@@ -53,17 +62,19 @@ ul{
   display: flex;
   flex-direction: row;
 }
+
 .product-name{
   margin: 0;
 }
 
 .checkout-image{
   margin: 1em;
+  margin-left: 0;
   /* background-color: #e05151; */
 }
 
 .checkout-image img{
-  max-width:25em;
+  width:25em;
 }
 
 .checkout-info{
@@ -74,12 +85,10 @@ ul{
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 1em 0;
+  justify-content: space-between;
 }
 
 .qty-price-tprice-cont{
-  margin-top: 1.6em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -96,6 +105,9 @@ ul{
   height: 2em;
   border: 1px solid  #a9a9a9;
   border-radius: 3px;
+}
+.adding-some-space{
+  height: 1em;
 }
 
 input[type=number]{
@@ -147,9 +159,6 @@ h3, h4{
   margin: 0;
 }
 
-.baseline-div{
-  margin-bottom: 2em;
-}
 
 /* similar products----------------------------------------------------------------- */
 .similar-products{
@@ -160,17 +169,7 @@ h3, h4{
   flex-direction: column;
 }
 
-
 /* similar products----------------------------------------------------------------- */
-
-/* divide---------------------------------------------------------------------- */
-/* /.divider{
-  width: 0.05em;
-  background-color: black;
-  margin-left: 1em;
-} */
-
-/* divide---------------------------------------------------------------------- */
 
 /* right content  _________________-------------------------____________________*/
 

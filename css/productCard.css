@@ -1,90 +1,82 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 .main-product{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 0 1em;
 
-}
-
-.multiview-cards{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .single-product{
   background-color: #fff;
+  margin-left: 1em;
   margin-bottom: 1.2em;
-  border-radius: 9px;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
-  min-width: 16em;
+  min-width: 19em;
   margin-top: 2em;
+  background-color: #F0F0F0;
 }
 .product-card{
   justify-content: center;
 }
-.bookmark{
-  width: 100%;
-}
-.bookmark-icon img{
-  width:1.6em;
-  float: right;
-  margin-right: .5em;
-  margin-top: .5em;
-  /* background-color: #5722ff; */
-}
+
 .image{
-  width: 100%;
+  width: 19em;
+  height: 19em;
   padding: 0 1em;
 }
 
 .image img{
-  width: 13.750em;
-  padding-bottom: 0.9em;
+  width: 100%;
 }
 
 .details{
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
-  /* height: 12.500em; */
-  /* background-color: #5722ff; */
   color: #000;
 
 }
 
 .name-product{
-  margin: 0 0.9em;
-  /* margin-bottom:1em; */
-  padding: 0;
-  min-height: 3.2em;
-  padding-bottom: 1em;
-
-  flex-wrap: wrap;
+  margin-left: 1em;
 }
 .name-product h3{
   margin: 0;
-}
-
-.details h3{
   font-weight: bold;
 }
 
 .price-and-star{
-  margin: 0 0.9em;
+  margin: 0 1em;
+  padding: 1em 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .price{
   float: left;
   margin: 0;
+  font-weight: normal;
 }
 
+.stars{
+  display: flex;
+  flex-direction: row;
+}
+
+.stars h6{
+  margin: 0;
+  padding: 0;
+  padding-left: 0.6em;
+}
 .price-and-star h4{
   margin: 0;
   padding: 0;
@@ -93,16 +85,25 @@
 .checked{
   color: #f3784d;
 }
+.color{
+  color: black;
+}
+
+.color:hover, .color:focus{
+  color: #f3784d;
+}
 
 .size-and-assembly{
-  margin: 1em 0.9em;
+  margin: 0 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.size-and-assembly h4{
+.size-and-assembly h5{
   font-weight: normal;
   margin: 0;
+  text-transform: uppercase;
+  
 }
 
 .single-product:hover, .single-product:focus{
@@ -110,55 +111,85 @@
 }
 
 
-@media (max-width: 426px) {
+.add-to-cart-button{
+  /* width: 100%; */
+  color: #fff;
+  transition-duration: 0.4s;
+  text-align: center;
+  padding: 1em 1em;
 
-  .single-product{
-    width: 10em;
-  }
+  background-color: #f3784d;
+  border-color: #f3784d;
+  border-width: 2px;
+  border-radius: 6px;
+  border-style: solid;
+  text-decoration: none;
+  font-weight: bold;
 
-  .name-product h3{
-    margin: 0;
-    font-size: 0.9em;
-    line-height: 1.4em;
-  }
+  margin: 1em;
+  margin-top: 2em;
 
-  .image img{
-    width: 8.5em;
-  }
-  .price-and-star{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .image{
-    width: 100%;
-    padding: 0;
-  }
-
+  text-transform: uppercase;
 
 }
-@media (max-width: 320px) {
+
+
+.add-to-cart-button:hover, .add-to-cart-button:focus{
+  background-color: #fff;
+  color: #f3784d;
+  border-color: #f3784d;
+  /* border-width: 0.2em; */
+  border-style: solid;
+}
+
+.add-to-cart-button:active{
+  animation: pulse-orange 0.2s 1 ease-out;
+}
+
+@keyframes pulse-orange {
+  from {
+    box-shadow:  0 0 0 0 rgba(255, 255, 255, 1), /*white*/
+                 0 0 0 0 rgba(243,120,77, 1); /*orange border*/
+  }
+  to {
+    box-shadow:  0 0 0 0.65em rgba(255, 255, 255, 0.5),
+                 0 0 0 1em rgba(243,120,77, 0);
+  }
+}
+
+@media (max-width: 1310px) {
+  .main-product{
+    justify-content: space-around;
+  }
+  .single-product{
+    min-width: 18em;
+  }
+
+  .image{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1080px) {
 
   .single-product{
-    width: 9em;
+    margin-left: 0;
+    min-width: 19em;
   }
-
-
-  .image img{
-    width: 8em;
+  .image{
+    width: 19em;
+    height: 19em;
   }
-  .stars{
-    margin-top:0.7em;
+}
+
+@media (max-width: 670px) {
+
+  .single-product{
+    margin-left: 0;
   }
   .image{
     width: 100%;
-    padding: 0;
+    height: 100%;
   }
-
-  .size-and-assembly h4{
-    font-size: 0.9em;
-  }
-
-
-
 }
