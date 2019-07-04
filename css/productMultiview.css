@@ -29,6 +29,7 @@
 .sub-navigation{
   display: flex;
   flex-direction: row;
+  padding-left: 1.5em;
 }
 
 .sub-in-text{
@@ -77,34 +78,15 @@ ul{
   .product-heading{
     margin-left: 1em;
   }
-/*
-  .single-product{
-    background-color: #fff;
-    margin-left: 1.2em;
-    margin-bottom: 1.2em;
-    border-radius: 9px;
-    display: flex;
-    flex-direction: column;
-    width: 8em;
+
+  .sub-navigation{
+    padding-left: 1em;
+  }
+}
+
+@media (max-width:1326px){
+  .sub-navigation{
+    padding-left: 0;
   }
 
-  .bookmark-icon img{
-    width: 1em;
-    float: right;
-    margin-right: 1.2em;
-    margin-top: 1.2em;
-    background-color: #5722ff;
-  }
-
-  .image img{
-    width: 8em;
-    padding-bottom: 0.9em;
-  }
-
-  .price-and-star{
-    margin: 0 1.2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  } */
 }

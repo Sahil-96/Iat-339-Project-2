@@ -232,7 +232,7 @@ form{
 
 /*.nav-3-items{
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
 }*/
 
 /*.icon-container{
@@ -311,9 +311,9 @@ form{
     order: 1;
     padding-top: 0.5em;
     margin-left: 1.5em;
-    margin-right: 1.5em;  
+    margin-right: 1.5em;
   }
 }
-@media (26.563em) {
+@media (max-width:26.563em) {
 /*comment just to force a push*/
 }
