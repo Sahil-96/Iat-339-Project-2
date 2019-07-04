@@ -4,7 +4,8 @@
 }
 
 .product-heading{
-  margin-top: 10em;
+  margin-top: 5.378em;
+  padding-top: 3em;
 }
 
 .product-page{
@@ -89,4 +90,22 @@ ul{
     padding-left: 0;
   }
 
+}
+
+@media (max-width:66em){
+.product-heading{
+  margin-top: 8.748em;
+  padding-top: 1.5em;
+}
+
+@media (max-width:48em){
+.product-heading{
+  margin-top: 11.972em;
+  padding-top: 1em;
+}
+
+@media (max-width:26.563em){
+.product-heading{
+  margin-top: 17.419em;
+  padding-top: 0.75em;
 }
