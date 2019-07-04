@@ -64,11 +64,16 @@
   justify-content: flex-start;
 }
 
+.event-date-and-details-container{
+  display: flex;
+  flex-direction: row;
+}
+
 .event-date{
   display: flex;
   flex-direction: column;
   margin: 0.563em;
-  width: 50px;
+  width: 3.125em;
   justify-content: center;
   text-align: center;
 }
@@ -77,7 +82,7 @@
   /*margin: 0 0.25em 0 0.25em;*/
   margin: 0;
   line-height: 0.921em;
-  /*justify-content: center;*/
+  justify-content: center;
 }
 
 .event-date h2{
@@ -90,10 +95,10 @@
 .event-details{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   /*margin: 0.75em 0.4em 0.6em 0.4em;*/
   margin: 0.563em;
-  width: 100;
+  width: 120px;
 }
 
 .event-details p{
@@ -102,18 +107,24 @@
   /*font-weight: bold;*/
 }
 
+.event-description-and-button-container{
+  display: flex;
+  flex-direction: row;
+}
+
 .event-description{
   display: flex;
   flex-direction: column;
   margin: 0.563em;
   /*margin: 0.25em;*/
-  justify-content: space-between;
+  justify-content: center;
+  max-width: 31.250em;
 
 }
 
 .event-description h1{
   margin: 0;
-  line-height: 0.921em;
+  line-height: 1.25em;
 }
 
 .event-description h3{
@@ -131,6 +142,7 @@
   flex-direction: column;
   justify-content: space-around;
   margin: 0.563em;
+  margin-left: 1.875em;
 }
 
 .register-button h3{
@@ -152,6 +164,8 @@
   border-color: #f3784d;
   border-width: 2px;
   border-style: solid;
+
+  width: 140px;
 }
 
 .register-button:hover, .register-button:focus{
@@ -178,6 +192,8 @@
   background-color: grey;
   color: white;
   border-color: grey;
+
+  width: 140px;
 }
 
 .registered-button h3{
@@ -192,6 +208,10 @@
   width: 1.875em;
 }
 
+.spacer3{
+  width: 1.875em;
+}
+
 ul{
   list-style: none;
   margin: 0;
@@ -202,4 +222,54 @@ ul{
 
 .filter li{
   border-bottom: solid #848484 0.5px;
+}
+
+@media (max-width: 77.813em) {
+  .page-content-container{
+    flex-direction: column;
+  }
+
+  .event-description{
+    /*min-width: 31.25em;*/
+    /*max-width: 620px;*/
+    width: 31.25em;
+  }
+
+}
+
+@media (max-width: 69.75em) {
+
+  /*.event-date-and-details-container{
+    flex-direction: column;
+  }*/
+
+  /*.event-description-and-button-container{
+    flex-direction: column;
+  }*/
+
+  .event-description{
+    display: flex;
+    order: -1;
+  }
+
+  /*.event-date{
+    flex-direction: row;
+  }*/
+
+  .event-details{
+    flex-direction: row;
+  }
+
+
+  .event-content{
+    flex-wrap: wrap;
+  }
+
+  .button-container{
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-around;*/
+  margin: 0.563em;
+  margin-left: 1.875em;
+  }
 }

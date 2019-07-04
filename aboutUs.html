@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/aboutUs.css">
     <link rel="stylesheet" href="css/headerNav.css">
+    <link rel="stylesheet" href="css/hamburger.css">
     <!-- <link rel="stylesheet" href="css/secondHeader.css"> -->
     <link rel="stylesheet" href="css/footer.css">
 
@@ -15,7 +16,10 @@
   </head>
 
   <body>
-     <nav class="container-nav">
+
+      <nav class="container-nav">
+
+        <button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items">MENU</button>
 
         <a class="logo-nav" href="index.html">Printed Coffee</a>
 
@@ -27,7 +31,7 @@
         </div>
 
 
-      <div class="menu-nav">
+      <div id="nav-items" class="menu-nav">
         <!-- <div class="nav-3-items"> -->
           <a class="button button-nav" href="productsMultiview.html">Product</a>
           <a class="button button-nav" href="eventBrowse.html">Event</a>
@@ -152,6 +156,8 @@
       </div>
 
     </div> -->
+
+    <script src="javascript/hamburger.js"></script>
 
   </body>
 </html>
