@@ -5,7 +5,7 @@
 
 .container-nav {
   /*margin-left: auto;
-  margin-right: auto*/;
+  margin-right: auto*/
   /*width: 100%;*/
   background-color: #fff;
   overflow: hidden;
@@ -18,12 +18,13 @@
   padding: 1em 0;
   box-shadow: 0px 13px 57px -15px rgba(0,0,0,0.49);
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo-nav {
   /*background-color:#ff5722;*/
   color: #f3784d;
-  min-width: 10em;
+  /*min-width: 10em;*/
   margin: 0.2em;
   margin-left: 1.5em;
   padding: 0.925em 0;
@@ -32,6 +33,30 @@
   text-decoration: none;
   /*font-size: 18px;*/
   order: 0;
+}
+
+.new-logo-nav{
+    /*background-color:#ff5722;*/
+  font-family: 'Rubik', 'Open Sans', sans-serif;
+  font-size: 1.4em;
+  /*min-width: 14em;*/
+  flex: 2 1 auto;
+  transition: 0.4s;
+  text-transform: uppercase;
+  /* color: #f3784d; */
+  color: #000;
+  /* color: #f3784d; */
+  min-width: 12em;
+  letter-spacing: 0.2em;
+  margin: 0.2em;
+  margin-left: 1em;
+  padding: 0.4em 0;
+  /*text-align: center;*/
+  font-weight: bold;
+  text-decoration: none;
+  /*font-size: 18px;*/
+  order: 0;
+
 }
 
 
@@ -97,6 +122,7 @@ input[id=search]{
   width: 9em;
   border-style: solid;
   border-color: #f3784d;
+  /*border-color: #000;*/
   border-radius: .5em;
   background-color: white;
    /*background-image: url('https://www.w3schools.com/css/searchicon.png'); */
@@ -118,6 +144,7 @@ input[type=text] {
   width: 15em;
   box-sizing: border-box;
   border: 2px solid #276cd414;
+  /*border: 2px solid darkgrey;*/
   border-radius: 0.25em;
   font-size: 1em;
   background-color: white;
@@ -143,6 +170,15 @@ form{
 }*/
 
 .cart{
+  padding-left: 1em;
+  padding-right: 1.5em;
+}
+
+.user{
+  padding-left: 1em;
+}
+
+/*.cart{
   margin-right: 1em;
   padding: 0;
   width: 50px;
@@ -168,7 +204,7 @@ form{
   margin-left: 1em;
   width: 50px;
   height: 50px;
-}
+}*/
 
 /*Core styling for all buttons*/
 .button{
@@ -280,7 +316,7 @@ form{
 
 /* The Responsiveness for the nav bar */
 
-@media (max-width: 66em) {
+@media (max-width: 67.5em) {
 
   .searchbar-nav {
     align-self: flex-end;
@@ -305,7 +341,7 @@ form{
 
 }
 
-@media (max-width: 48em) {
+@media (max-width: 50.313em) {
                  /*47.938em*/
   /*input[type=text]{
     width: 10em;
@@ -324,8 +360,19 @@ form{
     margin-right: 1.5em;
     width: 100%;
   }
+
+  .button-nav{
+    width: 100%;
+  }
 }
-@media (max-width: 26.563em) {
+@media (max-width: 28.375em) {
+  .container-nav {
+  position: relative;
+  /*top: 0;*/
+  /*z-index: 1;*/
+  width: 100%;
+}
+
   .menu-nav{
     flex-direction: column;
     width: 100%;
@@ -335,5 +382,14 @@ form{
   .button-nav{
     width: 100%;
     /*display: block;*/
+  }
+
+  .new-logo-nav{
+    /*flex: 2 1 auto;*/
+    min-width: 8em;
+    width: 10em;
+    margin-left: 1.5em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
   }
 }
