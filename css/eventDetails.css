@@ -5,7 +5,7 @@
 }
 
 .top-banner{
-	margin-top: 5.378em;
+	margin-top: 5.373em;
 	display: flex;
 	flex-direction: row;
 	/*background-color: lightblue;*/
@@ -344,21 +344,22 @@
 
 /*These are for the nav top space*/
 
-@media (max-width:66em){
+@media (max-width:67.5em){
 .top-banner{
-  margin-top: 8.748em;
+  margin-top: 8.738em;
+  /*padding-top: 1.5em;*/
+}
+
+@media (max-width:50.313em){
+.top-banner{
+  margin-top: 11.962em;
   /*padding-top: 1em;*/
 }
 
-@media (max-width:48em){
+@media (max-width:28.375em){
 .top-banner{
-  margin-top: 11.972em;
-  /*padding-top: 1em;*/
-}
-
-@media (max-width:26.563em){
-.top-banner{
-  margin-top: 17.419em;
+  /*margin-top: 16.429em;*/
+  margin-top: 0;
   /*padding-top: 0.75em;*/
 }
 
