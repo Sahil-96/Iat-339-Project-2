@@ -1,6 +1,6 @@
 .banner-image{
 	/* flex-grow: 1; */
-	margin-top: 5.378em; /*this is to offset due to Nav Bar*/
+	margin-top: 5.373em; /*this is to offset due to Nav Bar*/
 	/* width: 100%; */
 	height: 30em;
 	background-color: #e1e1e1;
@@ -167,20 +167,21 @@
 	}
 }
 
-@media (max-width:66em){
+@media (max-width:67.5em){
 .banner-image{
-  margin-top: 8.748em;
+  margin-top: 8.738em;
   /*padding-top: 1.5em;*/
 }
 
-@media (max-width:48em){
+@media (max-width:50.313em){
 .banner-image{
-  margin-top: 11.972em;
+  margin-top: 11.962em;
   /*padding-top: 1em;*/
 }
 
-@media (max-width:26.563em){
+@media (max-width:28.375em){
 .banner-image{
-  margin-top: 17.419em;
+  /*margin-top: 16.429em;*/
+  margin-top: 0;
   /*padding-top: 0.75em;*/
 }
