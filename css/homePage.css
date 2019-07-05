@@ -10,9 +10,10 @@
 
 .banner{
   width: 100%;
-  height: 40em;
-  background: url("../img/anycubic-photon-3d-printer-review-xxl-2.jpg");
+  height: 54em;
+  background: url("../img/gradient.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   align-items: flex-end;
   display: flex;
