@@ -8,7 +8,7 @@ ul{
 
 }
 
-.breadcrumbs{
+.your-cart{
   margin: 0;
   margin-left: 0.9em;
 }
@@ -27,11 +27,13 @@ ul{
 .order{
   display: flex;
   flex-direction: column;
+  margin-top: 1em;
   margin-left: 1em;
   max-height: 32em;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   padding: 0.6em;
   padding-top: 1.4em;
+  background-color: #F0F0F0;
 }
 
 .items{

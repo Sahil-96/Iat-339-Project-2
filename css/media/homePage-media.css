@@ -5,6 +5,11 @@
   .sale-heading{
     margin-left: 1em;
   }
+
+  .banner{
+    margin-top: 5em;
+    height: 40em;
+  }
 }
 
 @media (max-width:1270px) {
@@ -12,8 +17,37 @@
     /* flex-direction: column; */
     display: none;
   }
+
+  .banner{
+    margin-top: 5em;
+    height: 30em;
+    background: url("../../img/gradient-cropped.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
 }
+
+@media (max-width:922px) {
+  .banner{
+    margin-top: 12em;
+    height: 20em;
+  }
+}
+
+@media (max-width:516px) {
+  .banner{
+    margin-top: 15em;
+    height: 10em;
+  }
+}
+
 @media (max-width:425px) {
+
+  .banner{
+    margin-top: 21em;
+    height: 10em;
+  }
 
   .banner-image{
     margin-top: 2em;
@@ -44,5 +78,12 @@
   .spacer{
     height: 0;
     width: 100%;
+  }
+}
+
+@media (max-width:320px) {
+  .banner{
+    margin-top: 22.4em;
+    height: 10em;
   }
 }
