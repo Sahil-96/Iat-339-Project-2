@@ -81,6 +81,9 @@
 }
 
 @media (max-width: 800px) {
+  .product-details{
+    margin-top: 12em;
+  }
   .title-and-details{
     padding: 0 2em;
     display: flex;
@@ -90,12 +93,16 @@
 
 }
 
-/* @media (max-width:425px) {
-  .review-button{
-    padding: 0.5em 1em;
+@media (max-width:526px) {
+  .product-details{
+    margin-top: 15.6em;
   }
-} */
+}
+
 @media (max-width: 425px) {
+  .product-details{
+    margin-top: 21.5em;
+  }
   .review-button{
     text-align: center;
   }
@@ -112,5 +119,11 @@
   }
   .review-button{
     margin-top: 0.5em;
+  }
+}
+
+@media (max-width:320px) {
+  .product-details{
+    margin-top: 23em;
   }
 }
