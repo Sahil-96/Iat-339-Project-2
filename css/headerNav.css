@@ -60,9 +60,11 @@
   text-decoration: none;
   /*font-size: 18px;*/
   order: 0;
-
 }
 
+.new-logo-nav:hover, .new-logo-nav:focus{
+  color: #f3784d;
+}
 
 /*.after-search-container{
   display: flex;
