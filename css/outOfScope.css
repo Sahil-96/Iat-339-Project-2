@@ -6,6 +6,7 @@
 .home-page{
   margin-bottom: 4em;
   margin-top: 5.373em;
+  padding-top: 3em;
 }
 
 
@@ -21,18 +22,18 @@
 @media (max-width:67.5em){
 .home-page{
   margin-top: 8.738em;
-  /*padding-top: 1.5em;*/
+  padding-top: 1.5em;
 }
 
 @media (max-width:50.313em){
 .home-page{
   margin-top: 11.962em;
-  /*padding-top: 1em;*/
+  padding-top: 1em;
 }
 
 @media (max-width:28.375em){
 .home-page{
-  /*margin-top: 16.429em;*/
+  margin-top: 16.429em;
   margin-top: 0;
   padding-top: 0.75em;
 }
