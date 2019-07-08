@@ -324,7 +324,7 @@ ul{
     margin-right: 10px;
     width: 20px;
     height: 20px;
-    border: 2px 
+    border: 2px
     border-color gray;
     border-radius: 100%;
     -webkit-tap-highlight-color: transparent;
@@ -346,8 +346,8 @@ ul{
 .label:hover, .label:after{
       transform:scale(3.6);
     }
-    
-  
+
+
 input[type="radio"]:checked .label{
   border-color: white;
 }
@@ -368,7 +368,7 @@ input[type="radio"]:checked .label{
 .hidden{
   display: none;
 }*/
-  
+
 /*dribbble */
 /*.credit{
   position: fixed;
@@ -385,7 +385,7 @@ input[type="radio"]:checked .label{
 }
   .credit:hover{
     transform: scale(.95);
-  
+
   }*/
 
 @media (max-width: 77.813em) {
@@ -580,21 +580,24 @@ input[type="radio"]:checked .label{
 /*These are for the nav top space*/
 
 @media (max-width:67.5em){
-.product-heading{
-  margin-top: 8.738em;
-  padding-top: 1.5em;
+  .product-heading{
+    margin-top: 8.738em;
+    padding-top: 1.5em;
+  }
 }
 
 @media (max-width:50.313em){
-.product-heading{
-  margin-top: 11.962em;
-  padding-top: 1em;
+  .product-heading{
+    margin-top: 11.962em;
+    padding-top: 1em;
+  }
 }
 
 @media (max-width:28.375em){
-.product-heading{
-  /*margin-top: 16.429em;*/
-  margin-top: 0;
-  padding-top: 0.75em;
+  .product-heading{
+    /*margin-top: 16.429em;*/
+    margin-top: 0;
+    padding-top: 0.75em;
+  }
 }
 /*******************************************/
