@@ -11,14 +11,58 @@
     <link rel="stylesheet" href="css/headerNav.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/productCard.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/cartModal.css">
+
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" type='text/css'>
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:900&display=swap" rel="stylesheet" type='text/css'>
+
+
   </head>
 
   <body>
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Thank you for the order</h2>
+        </div>
+        <div class="modal-body">
+          <h4>Order placed on 4 July 2019 at 3:36 p.m.</h4>
+          <p>We'll send you a conformation to the email address you used for this order.Please allow upto 24 hours for us to process your order for shipment</p>
+        </div>
+        <div class="modal-footer">
+          <h3>PRINTED COFFEE</h3>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="myModalCart" class="cart-modal">
+
+      <!-- Modal content -->
+      <div class="modal-content-cart">
+        <div class="modal-header-cart">
+          <span class="close-cart">&times;</span>
+          <h2>Product Added to cart</h2>
+        </div>
+        <div class="modal-body-cart">
+          <h4>Checkout the product in the Cart</h4>
+          <p>You can buy the product by going to the cart and clicking on checkout</p>
+        </div>
+        <div class="modal-footer-cart">
+          <h3>PRINTED COFFEE</h3>
+        </div>
+      </div>
+
+    </div>
 
     <nav class="container-nav">
       <!-- <div class="logo-nav"> -->
@@ -205,7 +249,7 @@
                 </div>
 
               </div>
-            <div class="checkout-button button-submits">
+            <div class="checkout-button button-submits" id="myBtn">
                 CHECKOUT
               </div>
           </div>
@@ -250,7 +294,7 @@
                     </div>
                   </div>
                 </a>
-                <div class="add-to-cart-button">
+                <div class="add-to-cart-button mod">
                     Add to Cart
                 </div>
               </div>
@@ -282,7 +326,7 @@
                     </div>
                   </div>
                 </a>
-                <div class="add-to-cart-button">
+                <div class="add-to-cart-button mod">
                     Add to Cart
                 </div>
               </div>
@@ -314,7 +358,7 @@
                     </div>
                   </div>
                 </a>
-                <div class="add-to-cart-button">
+                <div class="add-to-cart-button mod">
                     Add to Cart
                 </div>
               </div>
@@ -346,7 +390,7 @@
                     </div>
                   </div>
                 </a>
-                <div class="add-to-cart-button">
+                <div class="add-to-cart-button mod">
                     Add to Cart
                 </div>
               </div>
@@ -389,16 +433,16 @@
           <h3>Project Components</h3>
           <ul>
             <li>
-              <a href="#" class="footer-in-text-link">Styleguide</a>
+              <a href="styleguide.html" class="footer-in-text-link">Styleguide</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Sitemap</a>
+              <a href="sitemap.html" class="footer-in-text-link">Sitemap</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">References</a>
+              <a href="references.html" class="footer-in-text-link">References</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Git Repository</a>
+              <a href="https://github.com/Sahil-96/Iat-339-Project-2" class="footer-in-text-link">Git Repository</a>
             </li>
           </ul>
         </div>
@@ -410,7 +454,7 @@
               <a href="faq.html" class="footer-in-text-link">FAQs</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Terms of Use</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Terms of Use</a>
             </li>
           </ul>
         </div>
@@ -419,13 +463,13 @@
           <h3>Services</h3>
           <ul>
             <li>
-              <a href="#" class="footer-in-text-link">In-store Workspaces</a>
+              <a href="outOfScope.html" class="footer-in-text-link">In-store Workspaces</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Local Prining</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Local Prining</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Consulting</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Consulting</a>
             </li>
           </ul>
         </div>
@@ -434,10 +478,10 @@
           <h3>Community</h3>
           <ul>
             <li>
-              <a href="#" class="footer-in-text-link">Forums</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Forums</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Something else here</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Something else here</a>
             </li>
           </ul>
         </div>
@@ -453,7 +497,8 @@
 
     </div>
 
-
+    <script src="javascript/modal.js"></script>
+    <script src="javascript/cartModal.js"></script>
 
   </body>
 </html>

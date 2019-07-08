@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/eventDetails.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/headerNav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 
@@ -17,6 +18,26 @@
   </head>
 
   <body>
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Registerd to the event!</h2>
+        </div>
+        <div class="modal-body">
+          <h4>Order placed on 4 July 2019 at 3:36 p.m.</h4>
+          <p>We'll send you a conformation to the email address you used for this order.Hope you enjoy you time there!</p>
+        </div>
+        <div class="modal-footer">
+          <h3>PRINTED COFFEE</h3>
+        </div>
+      </div>
+
+    </div>
+
     <nav class="container-nav">
       <!-- <div class="logo-nav"> -->
         <a class="new-logo-nav" href="index.html">Printed Coffee</a>
@@ -56,7 +77,7 @@
     <div class="page-content-container">
       <div class="top-banner">
         <div class="banner-image">
-          <img src="img/tempImage1.png" alt="A 960 x 480 image">
+          <img src="img/rocket.jpg" alt="A 960 x 480 image">
         </div>
         <div class="banner-text-container">
           <div class="banner-text-date-container">
@@ -82,7 +103,7 @@
 
           <!-- <div class="tickets-bar-container"> -->
             <!-- <div class="ticket-bar-right-column"> -->
-              <div class="button-register">
+              <div class="button-register" id="myBtn">
                   <h3>Register</h3>
               </div>
             <!-- </div> -->
@@ -193,16 +214,16 @@
           <h3>Project Components</h3>
           <ul>
             <li>
-              <a href="#" class="footer-in-text-link">Styleguide</a>
+              <a href="styleguide.html" class="footer-in-text-link">Styleguide</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Sitemap</a>
+              <a href="sitemap.html" class="footer-in-text-link">Sitemap</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">References</a>
+              <a href="references.html" class="footer-in-text-link">References</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Git Repository</a>
+              <a href="https://github.com/Sahil-96/Iat-339-Project-2" class="footer-in-text-link">Git Repository</a>
             </li>
           </ul>
         </div>
@@ -214,7 +235,7 @@
               <a href="faq.html" class="footer-in-text-link">FAQs</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Terms of Use</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Terms of Use</a>
             </li>
           </ul>
         </div>
@@ -223,13 +244,13 @@
           <h3>Services</h3>
           <ul>
             <li>
-              <a href="#" class="footer-in-text-link">In-store Workspaces</a>
+              <a href="outOfScope.html" class="footer-in-text-link">In-store Workspaces</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Local Prining</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Local Prining</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Consulting</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Consulting</a>
             </li>
           </ul>
         </div>
@@ -238,10 +259,10 @@
           <h3>Community</h3>
           <ul>
             <li>
-              <a href="#" class="footer-in-text-link">Forums</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Forums</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Something else here</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Something else here</a>
             </li>
           </ul>
         </div>
@@ -257,6 +278,6 @@
 
     </div>
 
-
+    <script src="javascript/modal.js"></script>
   </body>
 </html>

@@ -21,6 +21,7 @@
   align-items: center;
 }
 
+
 .logo-nav {
   /*background-color:#ff5722;*/
   color: #f3784d;
@@ -35,6 +36,8 @@
   order: 0;
 
 }
+
+
 
 .new-logo-nav{
     /*background-color:#ff5722;*/
@@ -59,7 +62,6 @@
   order: 0;
 
 }
-
 
 
 /*.after-search-container{
@@ -183,8 +185,8 @@ form{
 /*.cart{
   margin-right: 1em;
   padding: 0;
-  /* width: 50px;
-  height: 50px; */
+  width: 50px;
+  height: 50px;
 }
 
 .user{

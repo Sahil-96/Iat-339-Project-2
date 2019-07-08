@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/productCard.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/headerNav.css">
+    <link rel="stylesheet" href="css/cartModal.css">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik:900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" type='text/css'>
@@ -20,6 +23,26 @@
   </head>
 
   <body>
+
+    <div id="myModalCart" class="cart-modal">
+
+      <!-- Modal content -->
+      <div class="modal-content-cart">
+        <div class="modal-header-cart">
+          <span class="close-cart">&times;</span>
+          <h2>Product Added to cart</h2>
+        </div>
+        <div class="modal-body-cart">
+          <h4>Checkout the product in the Cart</h4>
+          <p>You can buy the product by going to the cart and clicking on checkout</p>
+        </div>
+        <div class="modal-footer-cart">
+          <h3>PRINTED COFFEE</h3>
+        </div>
+      </div>
+
+    </div>
+
     <nav class="container-nav">
       <!-- <div class="logo-nav"> -->
         <a class="new-logo-nav" href="index.html">Printed Coffee</a>
@@ -61,7 +84,7 @@
 
           </div>
           <div class="banner-cards-container page-content-container">
-            <div class="ad-card">
+            <div class="advert-card">
               <h2>Need a Refill?</h2>
               <div class="refill-card">
                 <div class="filament-row">
@@ -95,81 +118,87 @@
               </div><!--end of refill card-->
             </div><!--end of add card -->
 
-            <div class="ad-card">
+            <div class="advert-card">
               <h2>Upcoming Events</h2>
               <div class="two-events">
+                <a href="eventDetails.html">
+                  <div class="event-row">
+                    <div class="date-and-month">
+                      <div class="date">
+                        <h2>29</h2>
+                      </div>
+                      <div class="month">
+                        <h2>Jun</h2>
+                      </div>
+                    </div>
+                    <div class="vertical-line">
 
-                <div class="event-row">
-                  <div class="date-and-month">
-                    <div class="date">
-                      <h2>29</h2>
                     </div>
-                    <div class="month">
-                      <h2>Jun</h2>
+                    <div class="event-main-details">
+                      <div class="event-title">
+                        <h2>Theme: Dystopia/Utopia</h2>
+                      </div>
+                      <div class="time-and-genre">
+                        <h3>9:00 - 5:00 | Competition</h3>
+                      </div>
                     </div>
                   </div>
-                  <div class="vertical-line">
+                </a>
+                <a href="eventDetails.html">
+                  <div class="event-row">
+                    <div class="date-and-month">
+                      <div class="date">
+                        <h2>29</h2>
+                      </div>
+                      <div class="month">
+                        <h2>Jun</h2>
+                      </div>
+                    </div>
+                    <div class="vertical-line">
 
-                  </div>
-                  <div class="event-main-details">
-                    <div class="event-title">
-                      <h2>Theme: Dystopia/Utopia</h2>
                     </div>
-                    <div class="time-and-genre">
-                      <h3>9:00 - 5:00 | Competition</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="event-row">
-                  <div class="date-and-month">
-                    <div class="date">
-                      <h2>29</h2>
-                    </div>
-                    <div class="month">
-                      <h2>Jun</h2>
+                    <div class="event-main-details">
+                      <div class="event-title">
+                        <h2>Theme: Dystopia/Utopia</h2>
+                      </div>
+                      <div class="time-and-genre">
+                        <h3>9:00 - 5:00 | Competition</h3>
+                      </div>
                     </div>
                   </div>
-                  <div class="vertical-line">
+                </a>
+                <a href="eventDetails.html">
+                  <div class="event-row">
+                    <div class="date-and-month">
+                      <div class="date">
+                        <h2>29</h2>
+                      </div>
+                      <div class="month">
+                        <h2>Jun</h2>
+                      </div>
+                    </div>
+                    <div class="vertical-line">
 
-                  </div>
-                  <div class="event-main-details">
-                    <div class="event-title">
-                      <h2>Theme: Dystopia/Utopia</h2>
                     </div>
-                    <div class="time-and-genre">
-                      <h3>9:00 - 5:00 | Competition</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="event-row">
-                  <div class="date-and-month">
-                    <div class="date">
-                      <h2>29</h2>
-                    </div>
-                    <div class="month">
-                      <h2>Jun</h2>
+                    <div class="event-main-details">
+                      <div class="event-title">
+                        <h2>Theme: Dystopia/Utopia</h2>
+                      </div>
+                      <div class="time-and-genre">
+                        <h3>9:00 - 5:00 | Competition</h3>
+                      </div>
                     </div>
                   </div>
-                  <div class="vertical-line">
-
-                  </div>
-                  <div class="event-main-details">
-                    <div class="event-title">
-                      <h2>Theme: Dystopia/Utopia</h2>
-                    </div>
-                    <div class="time-and-genre">
-                      <h3>9:00 - 5:00 | Competition</h3>
-                    </div>
-                  </div>
-                </div>
+                </a>
 
               </div>
             </div>
 
 
-            <div class="ad-card">
+            <div class="advert-card">
               <h2>Your Wish Came True!</h2>
-              <div class="wishlist">
+              <a href="productDetails.html" class="no-color">
+                <div class="wishlist">
                 <div class="wishlist-left">
                   <img src="img/product-wish.png" alt="your-wishlist-img">
                 </div>
@@ -189,7 +218,9 @@
                   <h4 class="size">5.7 × 5.7 × 6.9 in</h4>
                 </div>
               </div>
-              <div class="wishlist">
+              </a>
+              <a href="productDetails.html" class="no-color">
+                <div class="wishlist">
                 <div class="wishlist-left">
                   <img src="img/product-wish.png" alt="your-wishlist-img">
                 </div>
@@ -209,6 +240,7 @@
                   <h4 class="size">5.7 × 5.7 × 6.9 in</h4>
                 </div>
               </div>
+              </a>
             </div>
 
           </div> <!--end of banner cards container-->
@@ -252,7 +284,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="add-to-cart-button">
+                  <div class="add-to-cart-button mod">
                       Add to Cart
                   </div>
                 </div>
@@ -284,7 +316,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="add-to-cart-button">
+                  <div class="add-to-cart-button mod">
                       Add to Cart
                   </div>
                 </div>
@@ -316,7 +348,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="add-to-cart-button">
+                  <div class="add-to-cart-button mod">
                       Add to Cart
                   </div>
                 </div>
@@ -348,7 +380,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="add-to-cart-button">
+                  <div class="add-to-cart-button mod">
                       Add to Cart
                   </div>
                 </div>
@@ -389,7 +421,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="add-to-cart-button">
+                  <div class="add-to-cart-button mod">
                       Add to Cart
                   </div>
                 </div>
@@ -422,7 +454,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="add-to-cart-button">
+                  <div class="add-to-cart-button mod">
                       Add to Cart
                   </div>
                 </div>
@@ -455,7 +487,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="add-to-cart-button">
+                  <div class="add-to-cart-button mod">
                       Add to Cart
                   </div>
                 </div>
@@ -488,7 +520,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="add-to-cart-button">
+                  <div class="add-to-cart-button mod">
                       Add to Cart
                   </div>
                 </div>
@@ -528,7 +560,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="add-to-cart-button">
+                  <div class="add-to-cart-button mod">
                       Add to Cart
                   </div>
                 </div>
@@ -560,7 +592,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="add-to-cart-button">
+                  <div class="add-to-cart-button mod">
                       Add to Cart
                   </div>
                 </div>
@@ -592,7 +624,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="add-to-cart-button">
+                  <div class="add-to-cart-button mod">
                       Add to Cart
                   </div>
                 </div>
@@ -624,7 +656,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="add-to-cart-button">
+                  <div class="add-to-cart-button mod">
                       Add to Cart
                   </div>
                 </div>
@@ -669,16 +701,16 @@
           <h3>Project Components</h3>
           <ul>
             <li>
-              <a href="#" class="footer-in-text-link">Styleguide</a>
+              <a href="styleguide.html" class="footer-in-text-link">Styleguide</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Sitemap</a>
+              <a href="sitemap.html" class="footer-in-text-link">Sitemap</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">References</a>
+              <a href="references.html" class="footer-in-text-link">References</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Git Repository</a>
+              <a href="https://github.com/Sahil-96/Iat-339-Project-2" class="footer-in-text-link">Git Repository</a>
             </li>
           </ul>
         </div>
@@ -690,7 +722,7 @@
               <a href="faq.html" class="footer-in-text-link">FAQs</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Terms of Use</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Terms of Use</a>
             </li>
           </ul>
         </div>
@@ -699,13 +731,13 @@
           <h3>Services</h3>
           <ul>
             <li>
-              <a href="#" class="footer-in-text-link">In-store Workspaces</a>
+              <a href="outOfScope.html" class="footer-in-text-link">In-store Workspaces</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Local Prining</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Local Prining</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Consulting</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Consulting</a>
             </li>
           </ul>
         </div>
@@ -714,10 +746,10 @@
           <h3>Community</h3>
           <ul>
             <li>
-              <a href="#" class="footer-in-text-link">Forums</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Forums</a>
             </li>
             <li>
-              <a href="#" class="footer-in-text-link">Something else here</a>
+              <a href="outOfScope.html" class="footer-in-text-link">Something else here</a>
             </li>
           </ul>
         </div>
@@ -732,6 +764,9 @@
       </div>
 
     </div>
+
+
+    <script src="javascript/cartModal.js"></script>
 
   </body>
 </html>

@@ -82,7 +82,7 @@
 
 @media (max-width: 800px) {
   .product-details{
-    margin-top: 12em;
+    margin-top: 11em;
   }
   .title-and-details{
     padding: 0 2em;
@@ -95,13 +95,21 @@
 
 @media (max-width:526px) {
   .product-details{
-    margin-top: 15.6em;
+    margin-top: 11em;
+  }
+}
+
+
+@media (max-width:454px) {
+  .product-details{
+    margin-top: 0em;
   }
 }
 
 @media (max-width: 425px) {
+
   .product-details{
-    margin-top: 21.5em;
+    margin-top: 0em;
   }
   .review-button{
     text-align: center;
@@ -119,11 +127,5 @@
   }
   .review-button{
     margin-top: 0.5em;
-  }
-}
-
-@media (max-width:320px) {
-  .product-details{
-    margin-top: 23em;
   }
 }
