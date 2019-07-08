@@ -64,23 +64,22 @@
 
 
 @media (max-width:67.5em){
-.faq{
-  margin-top: 8.738em;
-  padding-top: 1.5em;
+  .faq{
+    margin-top: 8.738em;
+    padding-top: 1.5em;
+  }
 }
-
 @media (max-width:50.313em){
-.faq{
-  margin-top: 11.962em;
-  padding-top: 1em;
+  .faq{
+    margin-top: 11.962em;
+    padding-top: 1em;
+  }
 }
-
 @media (max-width:28.375em){
-.faq{
-  /*margin-top: 16.429em;*/
-  margin-top: 0;
-  padding-top: 0.75em;
+  .faq{
+    /*margin-top: 16.429em;*/
+    margin-top: 0;
+    padding-top: 0.75em;
+  }
 }
-
 /****************************************/
-

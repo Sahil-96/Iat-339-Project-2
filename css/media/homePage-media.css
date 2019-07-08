@@ -30,14 +30,21 @@
 
 @media (max-width:922px) {
   .banner{
-    margin-top: 12em;
+    margin-top: 9em;
     height: 20em;
   }
 }
 
 @media (max-width:516px) {
   .banner{
-    margin-top: 15em;
+    margin-top: 11em;
+    height: 10em;
+  }
+}
+
+@media (max-width:454px) {
+  .banner{
+    margin-top: 0em;
     height: 10em;
   }
 }
@@ -45,12 +52,8 @@
 @media (max-width:425px) {
 
   .banner{
-    margin-top: 21em;
+    margin-top: 0em;
     height: 10em;
-  }
-
-  .banner-image{
-    margin-top: 2em;
   }
   .bottom-area{
     margin: 1em;
@@ -83,7 +86,6 @@
 
 @media (max-width:320px) {
   .banner{
-    margin-top: 22.4em;
     height: 10em;
   }
 }

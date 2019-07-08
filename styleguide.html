@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="css/media/homePage-media.css">
+    <link rel="stylesheet" href="css/productCard.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cartModal.css">
+    <link rel="stylesheet" href="css/productDetails.css">
+    <link rel="stylesheet" href="css/styleguide.css">
+    <link rel="stylesheet" href="css/headerNav.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap" rel="stylesheet" type='text/css'>
+
+    <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
+    <script src='javascript/jquery.reel.js'></script>
+  </head>
+
+  <body>
+
+    <div id="myModalCart" class="cart-modal">
+
+      <!-- Modal content -->
+      <div class="modal-content-cart">
+        <div class="modal-header-cart">
+          <span class="close-cart">&times;</span>
+          <h2>Product Added to cart</h2>
+        </div>
+        <div class="modal-body-cart">
+          <h4>Checkout the product in the Cart</h4>
+          <p>You can buy the product by going to the cart and clicking on checkout</p>
+        </div>
+        <div class="modal-footer-cart">
+          <h3>PRINTED COFFEE</h3>
+        </div>
+      </div>
+
+    </div>
+
+    <nav class="container-nav">
+      <!-- <div class="logo-nav"> -->
+        <a class="new-logo-nav" href="index.html">Printed Coffee</a>
+      <!-- </div> -->
+
+        <div class="searchbar-nav">
+          <form>
+            <input id="search" placeholder="Search for a product" type="text">
+          </form>
+        </div>
+
+
+      <div class="menu-nav">
+        <!-- <div class="nav-3-items"> -->
+          <a class="button button-nav" href="productsMultiview.html">Product</a>
+          <a class="button button-nav" href="eventBrowse.html">Event</a>
+          <a class="button button-nav button-nav-about-us" href="aboutUs.html">About Us</a>
+      </div>
+        <!-- <div class="icon-container"> -->
+        <!-- <div class=""> -->
+          <a class="user" href="outOfScope.html">
+            <i class="fas fa-user-circle fa-2x cart-icon"></i>
+          </a>
+        <!-- </div> -->
+          <!-- <div class="checkout-nav"> -->
+            <a class="cart" href="checkout.html">
+              <i class="fas fa-shopping-cart fa-2x cart-icon"></i>
+            </a>
+          <!-- </div>check out -->
+        <!-- </div>icon container -->
+      <!-- </div>menu -->
+
+    </nav>
+
+    <div class="styleguide-whole page-content-container">
+      <section class="intro-section">
+
+
+        <h1>My Style Guide</h1>
+
+        <p>This style guide was built based off of the sample provided by Paul B.</p>
+
+
+        <nav>
+          <h3>Jump to:</h3>
+            <div class="menu-nav-style">
+              <!-- <div class="nav-3-items"> -->
+                <a class="button button-nav" href="#interactive_elements">Interactive Elements</a>
+                <a class="button button-nav" href="#text_elements">Text Elements</a>
+                <a class="button button-nav" href="#combined_elements">Combined Elements</a>
+            </div>
+
+        </nav>
+
+      </section>
+
+
+      <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <section id="interactive_elements">
+
+        <!-- Default Button styling section -->
+        <section class="background">
+
+          <h2>Navigation Button</h2>
+
+          <h3>CSS selector:</h3>
+          <p>.button .button-nav</p>
+
+          <h3>Sample code:</h3>
+            <div class="code-section">
+              <pre>
+                &lt;a class="button button-nav" href="#"&gt;
+                    Product
+                  &lt;/a&gt;
+              </pre>
+            </div>
+
+          <h3>Rendered element:</h3>
+          <div class="menu-nav-style">
+            <!-- <div class="nav-3-items"> -->
+              <a class="button button-nav" href="#">Product</a>
+              <a class="button button-nav" href="#">Event</a>
+              <a class="button button-nav" href="#">About Us</a>
+          </div>
+        </section>
+
+        <section class="background">
+          <h2>In-text link</h2>
+
+          <h3>CSS selector:</h3>
+            <p>.inline-text</p>
+
+          <h3>Sample code:</h3>
+            <div class="code-section">
+              <pre>
+                &lt;p&gt;
+                  Within this line of text, you can click on
+                  &lt;a href="#" class="inline-text"&gt;
+                    this word
+                  &lt;/a&gt;
+                  and you will go to the main page.
+                &lt;/p&gt;
+              </pre>
+          </div>
+
+          <h3>Rendered element:</h3>
+            <p>Within this line of text, you can click on <a href="#" class="inline-text">this word</a> and you will go to the main page.</p>
+        </section>
+
+        <section class="background">
+          <h2>Submit Button</h2>
+
+          <h3>CSS selector:</h3>
+            <p>.button .button-submit</p>
+
+          <h3>Sample code:</h3>
+            <div class="code-section">
+              <pre>
+                &lt;div class="add-to-cart-button styleguide"&gt;
+                  Add to Cart
+                &lt;/div&gt;
+
+              </pre>
+          </div>
+
+          <h3>Rendered element:</h3>
+          <div class="add-to-cart-button button-width">
+              Add to Cart
+          </div>
+        </section>
+
+        <section class="background">
+          <h2>Text Input Field</h2>
+
+          <h3>CSS selector:</h3>
+            <p> name ="input"</p>
+
+          <h3>Sample code:</h3>
+            <div class="code-section">
+              <pre>
+                &lt;div class="text-field"&gt;
+                    &lt;form method="post" action="#"&gt;
+                      &lt;label for="input"&gt;
+                        &lt;textarea name="input" placeholder="Write something here" type="text"&gt;&lt;/textarea&gt;
+                      &lt;/label&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+
+              </pre>
+            </div>
+
+          <h3>Rendered element:</h3>
+
+          <div class="text-field">
+            <form>
+              <textarea name="input" placeholder="Write something here"></textarea>
+            </form>
+          </div>
+
+          </section>
+
+        <!-- <section class="background">
+          <h2>Search Bar</h2>
+
+            <h3>CSS selector:</h3>
+              <p> id ="search"</p>
+
+            <h3>Sample pre:</h3>
+              <div class="code-section">
+                <pre>
+
+                  &lt;div class="searchbar-nav"&gt;
+                    &lt;form&gt;
+                      &lt;input id="search" placeholder="Search for a product" type="text"&gt;
+                    &lt;/form&gt;
+                  &lt;/div&gt;
+
+                </pre>
+              </div>
+
+              <h3>Rendered element:</h3>
+
+              <div class="searchbar-nav">
+                <form>
+                  <input id="search" placeholder="Search for a product" type="text">
+                </form>
+              </div>
+
+        </section> -->
+
+      </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+        <section class="background">
+          <h2>Headings</h2>
+
+          <h3>CSS selector:</h3>
+            <p>No special classes</p>
+
+          <h3>Sample code:</h3>
+            <div class="code-section">
+              <pre>
+                &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+                &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+                &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+              </pre>
+            </div>
+
+          <h3>Rendered element:</h3>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+
+        </section>
+
+        <section class="background">
+          <h2>Paragraphs</h2>
+
+          <h3>CSS selector:</h3>
+            <p>No special classes</p>
+
+          <h3>Sample code:</h3>
+            <div class="code-section">
+              <pre>
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis maximus lectus sit amet tortor tincidunt gravida.
+                    Nam luctus nunc leo, sit amet malesuada magna molestie quis.
+                  &lt;/p&gt;
+              </pre>
+            </div>
+
+            <h3>Rendered element:</h3>
+            <p> I don't care what town you're born in, what city, what country. If you're a child, you are curious about your environment. You're overturning rocks. You're plucking leaves off of trees and petals off of flowers, looking inside, and you're doing things that create disorder in the lives of the adults around you.
+            The history of exploration across nations and across time is not one where nations said, 'Let's explore because it's fun.' It was, 'Let's explore so that we can claim lands for our country, so that we can open up new trade routes; let's explore so we can become more powerful.'</p>
+
+        </section>
+
+        <section class="background">
+          <h2>Bulleted Lists</h2>
+
+          <h3>CSS selector:</h3>
+            <p>No special classes</p>
+
+          <h3>Sample code:</h3>
+            <div class="code-section">
+              <pre>
+                &lt;ul&gt;
+                  &lt;li&gt;Item 1&lt;/li&gt;
+                  &lt;li&gt;Item 2&lt;/li&gt;
+                  &lt;li&gt;Item 3&lt;/li&gt;
+                &lt;/ul&gt;
+              </pre>
+            </div>
+
+            <h3>Rendered element:</h3>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+
+        </section>
+
+        <section class="background">
+          <h2>Numbered Lists</h2>
+
+          <h3>CSS selector:</h3>
+            <p>No special classes</p>
+
+          <h3>Sample code:</h3>
+            <div class="code-section">
+              <pre>
+                &lt;ol&gt;
+                  &lt;li&gt;Item 1&lt;/li&gt;
+                  &lt;li&gt;Item 2&lt;/li&gt;
+                  &lt;li&gt;Item 3&lt;/li&gt;
+                &lt;/ol&gt;
+              </pre> </div>
+
+            <h3>Rendered element:</h3>
+            <ol>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ol>
+
+        </section>
+
+      </section>
+      <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+      <!-- COMBINED ELEMENTS SECTION // -->
+      <section id="combined_elements">
+
+        <section class="background">
+          <h2>Main Navigation</h2>
+
+          <h3>CSS selector:</h3>
+            <p>.container-nav .main-nav-logo .main-nav-search .main-nav-item</p>
+
+          <h3>Sample code:</h3>
+
+            <div class="code-section">
+              <pre>
+
+                &lt;div class="styleguide-nav"&gt;
+                    &lt;a class="new-logo-nav" href="index.html"&gt;Printed Coffee&lt;/a&gt;
+
+                    &lt;div class="searchbar-nav"&gt;
+                      &lt;form&gt;
+                        &lt;input id="search" placeholder="Search for a product" type="text"&gt;
+                      &lt;/form&gt;
+                    &lt;/div&gt;
+
+
+                  &lt;div class="menu-nav"&gt;
+                      &lt;a class="button button-nav" href="#"&gt;Product&lt;/a&gt;
+                      &lt;a class="button button-nav" href="#"&gt;Event&lt;/a&gt;
+                      &lt;a class="button button-nav button-nav-about-us" href="#"&gt;About Us&lt;/a&gt;
+                  &lt;/div&gt;
+                      &lt;a class="user" href="#"&gt;
+                        &lt;i class="fas fa-user-circle fa-2x cart-icon"&gt;&lt;/i&gt;
+                      &lt;/a&gt;
+                        &lt;a class="cart" href="#"&gt;
+                          &lt;i class="fas fa-shopping-cart fa-2x cart-icon"&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                &lt;/div&gt;
+
+              </pre>
+            </div>
+
+            <h3>Rendered element:</h3>
+
+            <div class="styleguide-nav">
+              <!-- <div class="logo-nav"> -->
+                <a class="new-logo-nav" href="index.html">Printed Coffee</a>
+              <!-- </div> -->
+
+                <div class="searchbar-nav">
+                  <form>
+                    <input type="text" id="searching" placeholder="Search for a product" >
+                  </form>
+                </div>
+
+
+              <div class="menu-nav">
+                <!-- <div class="nav-3-items"> -->
+                  <a class="button button-nav" href="#">Product</a>
+                  <a class="button button-nav" href="#">Event</a>
+                  <a class="button button-nav button-nav-about-us" href="#">About Us</a>
+              </div>
+                <!-- <div class="icon-container"> -->
+                <!-- <div class=""> -->
+                  <a class="user" href="#">
+                    <i class="fas fa-user-circle fa-2x cart-icon"></i>
+                  </a>
+                <!-- </div> -->
+                  <!-- <div class="checkout-nav"> -->
+                    <a class="cart" href="#">
+                      <i class="fas fa-shopping-cart fa-2x cart-icon"></i>
+                    </a>
+                  <!-- </div>check out -->
+                <!-- </div>icon container -->
+              <!-- </div>menu -->
+
+            </div>
+
+
+        </section>
+
+        <section class="background">
+          <h2>Product Listing</h2>
+
+          <h3>CSS selector:</h3>
+            <p>.all-card-containers .card-container .image-container .card-text-container .card-price</p>
+
+          <h3>Sample code:</h3>
+            <div class="code-section">
+              <pre>
+
+                &lt;div class="main-product"&gt;
+
+                  &lt;div class="single-product"&gt;
+                    &lt;a href="productDetails.html"&gt;
+                      &lt;div class="product-card"&gt;
+                        &lt;div class="image"&gt;
+                          &lt;img src="img/product1.png" alt="product-image"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="details"&gt;
+                          &lt;div class="name-product"&gt;
+                              &lt;h3&gt;THE MAKERBOT MINI+&lt;/h3&gt;
+                          &lt;/div&gt;
+                          &lt;div class="price-and-star"&gt;
+                            &lt;h3 class="price"&gt;$399&lt;/h3&gt;
+                            &lt;div class="stars"&gt;
+                              &lt;span class="fa fa-star checked fa-xs"&gt;&lt;/span&gt;
+                              &lt;span class="fa fa-star checked fa-xs"&gt;&lt;/span&gt;
+                              &lt;span class="fa fa-star checked fa-xs"&gt;&lt;/span&gt;
+                              &lt;span class="fa fa-star checked fa-xs"&gt;&lt;/span&gt;
+                              &lt;span class="fa fa-star fa-xs"&gt;&lt;/span&gt;
+                              &lt;h6&gt;(309)&lt;/h6&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;div class="size-and-assembly"&gt;
+                            &lt;h5&gt;13.2 x 13.5 x 9.5&lt;/h5&gt;
+                            &lt;h5&gt;Semi Assembled&lt;/h5&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/a&gt;
+                    &lt;div class="add-to-cart-button mod"&gt;
+                        Add to Cart
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                &lt;/div&gt;
+
+              </pre>
+            </div>
+
+          <h3>Rendered element:</h3>
+
+          <div class="main-product">
+
+            <div class="single-product">
+              <a href="productDetails.html">
+                <div class="product-card">
+                  <div class="image">
+                    <img src="img/product1.png" alt="product-image">
+                  </div>
+                  <div class="details">
+                    <div class="name-product">
+                        <h3>THE MAKERBOT MINI+</h3>
+                    </div>
+                    <div class="price-and-star">
+                      <h3 class="price">$399</h3>
+                      <div class="stars">
+                        <span class="fa fa-star checked fa-xs"></span>
+                        <span class="fa fa-star checked fa-xs"></span>
+                        <span class="fa fa-star checked fa-xs"></span>
+                        <span class="fa fa-star checked fa-xs"></span>
+                        <span class="fa fa-star fa-xs"></span>
+                        <h6>(309)</h6>
+                      </div>
+                    </div>
+                    <div class="size-and-assembly">
+                      <h5>13.2 x 13.5 x 9.5</h5>
+                      <h5>Semi Assembled</h5>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="add-to-cart-button mod">
+                  Add to Cart
+              </div>
+            </div>
+
+            <div class="single-product">
+              <a href="productDetails.html">
+                <div class="product-card">
+                  <div class="image">
+                    <img src="img/product1.png" alt="product-image">
+                  </div>
+                  <div class="details">
+                    <div class="name-product">
+                        <h3>THE MAKERBOT MINI+</h3>
+                    </div>
+                    <div class="price-and-star">
+                      <h3 class="price">$399</h3>
+                      <div class="stars">
+                        <span class="fa fa-star checked fa-xs"></span>
+                        <span class="fa fa-star checked fa-xs"></span>
+                        <span class="fa fa-star checked fa-xs"></span>
+                        <span class="fa fa-star checked fa-xs"></span>
+                        <span class="fa fa-star fa-xs"></span>
+                        <h6>(309)</h6>
+                      </div>
+                    </div>
+                    <div class="size-and-assembly">
+                      <h5>13.2 x 13.5 x 9.5</h5>
+                      <h5>Semi Assembled</h5>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="add-to-cart-button mod">
+                  Add to Cart
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="background">
+          <h2>360 Preview</h2>
+
+          <h3>CSS selector:</h3>
+            <p>.all-card-containers .card-container .image-container .card-text-container .card-price</p>
+
+          <h3>Sample code:</h3>
+            <div class="code-section">
+              <pre>
+
+                &lt;div class="images-set"&gt;
+                  &lt;!-- This is where all the images go.... --&gt;
+                  &lt;div class="main-image"&gt;
+                    &lt;img src="img/product1.jpg"
+                      class="reel"
+                      id="image"
+                      data-images="img/model/D-##.jpg|1..72|1"
+                      data-cw="false"
+                      data-frame="32"
+                      data-speed="0.2"
+                      data-duration="1"
+                      data-velocity="3"
+                      data-brake="0.3" alt="a 360 product preview"&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+
+              </pre>
+            </div>
+
+          <h3>Rendered element:</h3>
+
+            <div class="images-set">
+              <!-- This is where all the images go.... -->
+              <div class="main-image">
+                <img src="img/product1.jpg"
+                  class="reel"
+                  id="image"
+                  data-images="img/model/D-##.jpg|1..72|1"
+                  data-cw="false"
+                  data-frame="32"
+                  data-speed="0.2"
+                  data-duration="1"
+                  data-velocity="3"
+                  data-brake="0.3" alt="a 360 product preview">
+              </div>
+            </div>
+
+        </section>
+
+      </section>
+
+
+    </div>
+    <div class="footer">
+
+      <div class="social-media-container">
+
+        <div class="social-media-items page-content-container">
+          <h4>Get connected with us on our social media</h4>
+          <div class="social-media-links">
+            <a href="#">
+              <i class="fab fa-facebook-square fa-2x social"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube fa-2x social"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter-square fa-2x social"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram fa-2x social"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-links-container page-content-container">
+
+        <div class="footer-links-item">
+          <h3>Project Components</h3>
+          <ul>
+            <li>
+              <a href="styleguide.html" class="footer-in-text-link">Styleguide</a>
+            </li>
+            <li>
+              <a href="sitemap.html" class="footer-in-text-link">Sitemap</a>
+            </li>
+            <li>
+              <a href="references.html" class="footer-in-text-link">References</a>
+            </li>
+            <li>
+              <a href="https://github.com/Sahil-96/Iat-339-Project-2" class="footer-in-text-link">Git Repository</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-links-item">
+          <h3>Support Section</h3>
+          <ul>
+            <li>
+              <a href="faq.html" class="footer-in-text-link">FAQs</a>
+            </li>
+            <li>
+              <a href="outOfScope.html" class="footer-in-text-link">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-links-item">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <a href="outOfScope.html" class="footer-in-text-link">In-store Workspaces</a>
+            </li>
+            <li>
+              <a href="outOfScope.html" class="footer-in-text-link">Local Prining</a>
+            </li>
+            <li>
+              <a href="outOfScope.html" class="footer-in-text-link">Consulting</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-links-item">
+          <h3>Community</h3>
+          <ul>
+            <li>
+              <a href="outOfScope.html" class="footer-in-text-link">Forums</a>
+            </li>
+            <li>
+              <a href="outOfScope.html" class="footer-in-text-link">Something else here</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="copyright-container">
+        <div class="copyright-item page-content-container">
+            <h4>Copyright 2019 | Simon Fraser University, Surrey | 123-456-7890 | support@company.com</h4>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="javascript/cartModal.js"></script>
+  </body>
+</html>

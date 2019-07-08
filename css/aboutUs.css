@@ -168,20 +168,21 @@
 }
 
 @media (max-width:67.5em){
-.banner-image{
-  margin-top: 8.738em;
-  /*padding-top: 1.5em;*/
+	.banner-image{
+	  margin-top: 8.738em;
+	  /*padding-top: 1.5em;*/
+	}
 }
-
 @media (max-width:50.313em){
-.banner-image{
-  margin-top: 11.962em;
-  /*padding-top: 1em;*/
+	.banner-image{
+	  margin-top: 11.962em;
+	  /*padding-top: 1em;*/
+	}
 }
-
 @media (max-width:28.375em){
-.banner-image{
-  /*margin-top: 16.429em;*/
-  margin-top: 0;
-  /*padding-top: 0.75em;*/
+	.banner-image{
+	  /*margin-top: 16.429em;*/
+	  margin-top: 0;
+	  /*padding-top: 0.75em;*/
+	}
 }
