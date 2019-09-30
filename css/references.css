@@ -1,0 +1,50 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.references-heading{
+  margin-top: 5.373em;
+  padding-top: 3em;
+}
+
+.references-page{
+  display: flex;
+  flex-direction: column;
+}
+
+.references-page li{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+@media (max-width:67.5em){
+  .references-heading{
+    margin-top: 8.738em;
+    padding-top: 1.5em;
+  }
+}
+
+@media (max-width:50.313em){
+  .references-heading{
+    margin-top: 11.962em;
+    padding-top: 1em;
+  }
+}
+
+@media (max-width:28.375em){
+  .references-heading{
+    /*margin-top: 16.429em;*/
+    margin-top: 0;
+    padding-top: 0.75em;
+  }
+}
+
+@media (max-width:28.375em){
+  .references-heading{
+    /* margin-top: 16.429em; */
+    margin-top: 0;
+    padding-top: 0.75em;
+  }
+}

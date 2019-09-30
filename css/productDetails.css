@@ -316,6 +316,12 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
   /* border-radius: 6.250em; */
 }
+.user-icon{
+  display: flex;
+  width: 4em;
+  justify-content: center;
+  align-items: center;
+}
 .name-star{
   height: 100%;
   margin-left: 1em;
